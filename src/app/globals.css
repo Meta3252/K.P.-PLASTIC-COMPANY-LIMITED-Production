@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -24,3 +25,86 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* สไตล์ Swiper pagination */
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.3);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background: #d6b760 !important;
+  box-shadow: 0 0 8px #d6b760, 0 0 16px #d6b760;
+  transform: scale(1.2);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #6a533c;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #a07f52;
+  margin: 10px auto 0;
+  border-radius: 3px;
+}
+/* ใส่ใน globals.css หรือ <style jsx global> ก็ได้ */
+/* Global Scrollbar Styles (ใส่ใน globals.css หรือ style jsx global) */
+/* ใส่ใน global CSS หรือ style jsx global */
+/* ใส่ใน global CSS หรือ <style jsx global> */
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 224, 0.05); /* แสงจางๆ สีครีม */
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  margin: 8px 0;
+  box-shadow:
+    inset 0 0 8px rgba(255, 215, 0, 0.15),
+    inset 0 0 20px rgba(255, 215, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(145deg, #fff6c8, #ffdd57);
+  border-radius: 12px;
+  border: 3px solid rgba(255, 215, 0, 0.7);
+  backdrop-filter: blur(12px);
+  box-shadow:
+    0 0 10px rgba(255, 215, 0, 0.8),
+    0 0 20px rgba(255, 215, 0, 0.6),
+    inset 0 0 15px rgba(255, 248, 180, 0.7),
+    inset 0 2px 4px rgba(255, 255, 224, 0.8);
+  transition: all 0.35s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(145deg, #fffacd, #ffd932);
+  border-color: rgba(255, 215, 0, 1);
+  box-shadow:
+    0 0 15px rgba(255, 215, 0, 1),
+    0 0 35px rgba(255, 215, 0, 0.9),
+    inset 0 0 20px rgba(255, 248, 180, 0.9),
+    inset 0 2px 6px rgba(255, 255, 224, 1);
+  transform: scaleX(1.1);
+}
+
+
+
+
+
+
