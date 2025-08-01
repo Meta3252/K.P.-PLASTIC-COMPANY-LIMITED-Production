@@ -24,11 +24,9 @@ export default function LogoScroller() {
 
       <style jsx>{`
         .out-project-section {
-          max-width: 1200px;
           margin: 0 auto;
           padding: 40px 20px;
           background: #fffaf5; /* โทนครีมนวลตา อบอุ่น */
-          border-radius: 20px;
           box-shadow: 0 10px 30px rgba(200, 180, 160, 0.15);
           user-select: none;
         }

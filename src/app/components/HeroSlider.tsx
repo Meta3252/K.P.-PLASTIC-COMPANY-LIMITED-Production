@@ -90,9 +90,6 @@ export default function HeroSlider() {
                         className="w-full h-full bg-cover bg-center flex items-center justify-center text-center relative"
                         style={{ backgroundImage: `url(${slide.image})` }}
                     >
-                        {/* Soft overlay */}
-                        <div className="absolute inset-0 bg-[#4B4237]/70 z-0" />
-
                         <motion.div
                             className="relative z-10 text-gray-100 max-w-xl mx-auto px-4 font-serif"
                             initial="hidden"

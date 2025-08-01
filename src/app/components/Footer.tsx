@@ -46,7 +46,6 @@ export default function Footer() {
         .footer {
           background: #f7f3ee;
           padding: 40px 20px;
-          border-radius: 20px 20px 0 0;
           color: #6a533c;
           font-family: 'Georgia', serif;
           box-shadow: 0 -5px 20px rgba(200, 180, 160, 0.1);
