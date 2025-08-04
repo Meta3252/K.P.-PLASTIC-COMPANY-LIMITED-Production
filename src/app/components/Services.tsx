@@ -4,7 +4,7 @@ export default function Services() {
       image: '/services/food-safety.png',
       title: 'Food Safety Standards System',
       description: 'มาตรฐานความปลอดภัยด้านอาหาร เพื่อรับรองความปลอดภัยในการผลิตและจัดการอาหารตามระบบสากล',
-      link: '/services/food-safety',
+      link: '/services',
     },
     {
       image: '/services/iso.png',
@@ -17,12 +17,12 @@ export default function Services() {
       description: 'มาตรฐานด้านความรับผิดชอบต่อสังคม เพื่อสร้างความเชื่อมั่นและภาพลักษณ์ที่ดีให้กับองค์กร',
     },
     {
-      image: '/services/softskills.png',
+      image: '/services/softskills.jpg',
       title: 'Soft Skills',
       description: 'ฝึกอบรมด้านทักษะการสื่อสาร การทำงานเป็นทีม ความเป็นผู้นำ และการคิดเชิงกลยุทธ์',
     },
     {
-      image: '/services/law.png',
+      image: '/services/law.jpg',
       title: 'Legal Services Related To Intellectual Property',
       description: 'บริการให้คำปรึกษาด้านกฎหมายที่เกี่ยวข้องกับทรัพย์สินทางปัญญา เช่น ลิขสิทธิ์ สิทธิบัตร และเครื่องหมายการค้า',
     },
