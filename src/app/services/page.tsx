@@ -4,10 +4,11 @@ import { useState } from 'react';
 import CategoryCard from '../components/CategoryCard';
 import { categories, services } from '../components/categoryData';
 import Breadcrumb from '../components/Breadcrumb';
+import CustomCategorySelect from '../components/CustomCategorySelect';
 
 export default function ServicePage() {
-    const [selectedCategory, setSelectedCategory] = useState("Food Safety Standards System");
-    const [searchTerm, setSearchTerm] = useState("");
+    const [selectedCategory, setSelectedCategory] = useState('Food Safety Standards System');
+    const [searchTerm, setSearchTerm] = useState('');
 
     const filteredServices = services.filter(
         (service) =>
@@ -27,37 +28,28 @@ export default function ServicePage() {
                 <div className="absolute inset-0 bg-black/30"></div>
 
                 <div className="relative max-w-7xl mx-auto px-6 py-24 z-10 text-center">
-                    <h1 className="text-4xl font-bold text-white tracking-tight">
-                        บริการของเรา
-                    </h1>
+                    <h1 className="text-4xl font-bold text-white tracking-tight">บริการของเรา</h1>
                     <p className="text-lg text-white mt-4">
                         ครอบคลุมทั้งมาตรฐาน ความปลอดภัย กฎหมาย และพัฒนาศักยภาพของบุคลากร
                     </p>
                 </div>
             </section>
 
-
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="p-6 md:p-10 ">
                     <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mb-10">
-                        <select
-                            value={selectedCategory}
-                            onChange={(e) => setSelectedCategory(e.target.value)}
-                            className="border border-gray-300 rounded-md px-4 py-2 text-sm w-full sm:w-64 focus:outline-none focus:ring-2 focus:ring-[#a37d58] bg-white text-gray-800 shadow-sm"
-                        >
-                            {categories.map((cat) => (
-                                <option key={cat} value={cat}>
-                                    {cat}
-                                </option>
-                            ))}
-                        </select>
-
+                        {/* ใช้ Dropdown แบบสวยนี้แทน select */}
+                        <CustomCategorySelect
+                            categories={categories}
+                            selected={selectedCategory}
+                            onChange={setSelectedCategory}
+                        />
                         <input
                             type="text"
                             placeholder="ค้นหาบริการ..."
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
-                            className="border border-gray-300 rounded-md px-4 py-2 text-sm w-full sm:w-72 focus:outline-none focus:ring-2 focus:ring-[#a37d58] bg-white text-gray-800 shadow-sm"
+                            className="border border-yellow-400 rounded-md px-4 py-2 text-sm w-full sm:w-72 focus:outline-none focus:ring-2 focus:ring-yellow-500 bg-white text-[#a37d58] shadow-sm"
                         />
                     </div>
 
@@ -75,8 +67,6 @@ export default function ServicePage() {
                     </div>
                 </div>
             </div>
-
         </main>
-
     );
 }

@@ -25,9 +25,9 @@ export default function Footer() {
 
         <div className="footer-section contact">
           <h3>Contact Us</h3>
-          <p>Email: info@example.com</p>
-          <p>Phone: +66 1234 5678</p>
-          <p>Address: 123 Earth St, Soft City</p>
+          <p>Email: marketing@besustain.co.th</p>
+          <p>Phone: 02-125-2019,093-328-7455</p>
+          <p>Address: 69/357 หมู่ 10 ต.บางเลน อ.บางใหญ่ จ.นนทบุรี 11140</p>
           <div className="social-icons">
             <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noreferrer">
               <svg width="24" height="24" fill="#6a533c" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 5 3.66 9.13 8.44 9.88v-6.99H7.9v-2.89h2.54V9.84c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.62.77-1.62 1.56v1.87h2.77l-.44 2.89h-2.33v6.99C18.34 21.13 22 17 22 12z"/></svg>

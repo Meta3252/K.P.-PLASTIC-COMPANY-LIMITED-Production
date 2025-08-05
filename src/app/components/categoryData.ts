@@ -12,9 +12,9 @@ export const categories = [
 export const services = [
   // Food Safety Standards System
   {
-    title: "บริการที่ปรึกษาระบบ GMP",
+    title: "บริการที่ปรึกษาระบบ GHP",
     description:
-      "หลักสูตรการฝึกอบรม GMP CODEX GMP วัตถุประสงค์ เพื่อให้ผู้เข้าร่วมอบรมมีความรู้และความเข้าใจเกี่ยวกับระบบการจัดการและควบคุมคุณภาพตามข้อกำหนดของ CODEX GMP",
+      "หลักสูตรการฝึกอบรม GHP CODEX GHP วัตถุประสงค์ เพื่อให้ผู้เข้าร่วมอบรมมีความรู้และความเข้าใจเกี่ยวกับระบบการจัดการและควบคุมคุณภาพตามข้อกำหนดของ CODEX GHP",
     category: "Food Safety Standards System",
     image: "/images/foodsafety/GMP.jpg",
     link: "/services/gmp",
@@ -201,7 +201,7 @@ export const services = [
   },
 
   // Legal services related to intellectual property
-   {
+  {
     title: "บริการจดสิทธิบัตรต่างประเทศคุ้มครองธุรกิจของคุณ",
     description:
       "การรับจดสิทธิบัตรต่างประเทศเป็นขั้นตอนสำคัญในการปกป้องสิทธิ์และสิทธิบัตรของธุรกิจที่มีความสำคัญทั้งในระดับชาติและนานาชาติ โดยการรับสิทธิบัตรจะช่วยให้ธุรกิจได้รับการคุ้มครองทรัพย์สินทางปัญญาของตน และป้องกันการละเมิดสิทธิ์จากผู้อื่นในตลาด",
@@ -242,7 +242,7 @@ export const services = [
     link: "/services/trademark-registration",
   },
   //Request a factory license
-   {
+  {
     title: "บริการที่ปรึกษา BOI",
     description:
       "BOI ย่อมาจาก Board of Investment หรือ คณะกรรมการส่งเสริมการลงทุน เป็นหน่วยงานภายใต้สังกัดของกระทรวงอุตสาหกรรมที่มีหน้าที่หลักในการส่งเสริมการลงทุนในประเทศไทย",
