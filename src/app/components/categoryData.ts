@@ -18,6 +18,81 @@ export const services = [
     category: "Food Safety Standards System",
     image: "/images/foodsafety/GMP.jpg",
     link: "/services/gmp",
+    content: `
+<article class="prose prose-lg max-w-none text-gray-800">
+
+  <!-- วัตถุประสงค์ -->
+  <section class="border-b border-gray-300 pb-6 mb-8">
+    <h2 class="text-2xl font-bold text-[#a37d58] mb-4">วัตถุประสงค์</h2>
+    <ul class="list-disc list-inside space-y-2">
+      <li>ให้ความรู้ความเข้าใจเกี่ยวกับระบบการจัดการและควบคุมคุณภาพตามข้อกำหนด CODEX GMP</li>
+      <li>ทราบวิธีดำเนินงานตามระบบมาตรฐาน GMP อย่างถูกต้อง</li>
+      <li>ประยุกต์ใช้ข้อกำหนด GMP ในสถานประกอบการได้อย่างมีประสิทธิภาพ</li>
+      <li>เตรียมความพร้อมสำหรับการตรวจรับรองระบบ GMP และการตรวจติดตามภายใน</li>
+    </ul>
+  </section>
+
+  <!-- รายละเอียดของหลักสูตร -->
+  <section class="border-b border-gray-300 pb-6 mb-8">
+    <h2 class="text-2xl font-bold text-[#a37d58] mb-4">รายละเอียดของหลักสูตร</h2>
+    <ol class="list-decimal list-inside space-y-4">
+      <li>
+        <strong>พื้นฐานและความเป็นมาของ GMP</strong>
+        <ul class="list-disc list-inside ml-6 mt-2 space-y-1 text-base">
+          <li>อธิบายความสำคัญของ GMP ในอุตสาหกรรมอาหาร</li>
+          <li>ประโยชน์ของการนำระบบ GMP มาใช้ในกระบวนการผลิต</li>
+        </ul>
+      </li>
+      <li>
+        <strong>ข้อกำหนดของระบบ GMP</strong>
+        <ul class="list-disc list-inside ml-6 mt-2 space-y-1 text-base">
+          <li>หลักเกณฑ์เกี่ยวกับสถานที่ อุปกรณ์ และสิ่งแวดล้อม</li>
+          <li>ข้อกำหนดด้านการผลิต การควบคุมคุณภาพ และสุขลักษณะ</li>
+        </ul>
+      </li>
+      <li>
+        <strong>ตัวอย่างกรณีศึกษาและการประยุกต์ใช้</strong>
+        <ul class="list-disc list-inside ml-6 mt-2 space-y-1 text-base">
+          <li>ยกตัวอย่างจากโรงงานที่สอดคล้องกับข้อกำหนด GMP</li>
+          <li>ปรับปรุงกระบวนการให้ตรงตามมาตรฐาน GMP</li>
+        </ul>
+      </li>
+      <li>
+        <strong>การตรวจติดตามและเตรียมความพร้อมก่อนการรับรอง</strong>
+        <ul class="list-disc list-inside ml-6 mt-2 space-y-1 text-base">
+          <li>ขั้นตอนการตรวจติดตามภายในตามระบบ GMP</li>
+          <li>การเตรียมความพร้อมสำหรับการตรวจรับรองระบบ GMP</li>
+        </ul>
+      </li>
+      <li>
+        <strong>เอกสารระบบ GMP</strong>
+        <ul class="list-disc list-inside ml-6 mt-2 space-y-1 text-base">
+          <li>จัดทำเอกสารและบันทึกข้อมูลตามข้อกำหนด GMP</li>
+          <li>การจัดเก็บเอกสารเพื่อความพร้อมในการตรวจสอบ</li>
+        </ul>
+      </li>
+      <li>
+        <strong>แลกเปลี่ยนประสบการณ์</strong>
+        <ul class="list-disc list-inside ml-6 mt-2 space-y-1 text-base">
+          <li>เปิดโอกาสให้ผู้เข้าร่วมอบรมแลกเปลี่ยนความคิดเห็นและประสบการณ์กับวิทยากร</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ผลลัพธ์ที่คาดหวัง -->
+  <section>
+    <h2 class="text-2xl font-bold text-[#a37d58] mb-4">ผลลัพธ์ที่คาดหวัง</h2>
+    <ul class="list-disc list-inside space-y-2">
+      <li>ผู้เข้าอบรมสามารถปฏิบัติตามข้อกำหนด GMP ได้อย่างถูกต้อง</li>
+      <li>ได้รับใบรับรองที่ใช้ยืนยันกับ Auditor ได้</li>
+    </ul>
+  </section>
+
+</article>
+`
+
+
   },
   {
     title: "บริการที่ปรึกษา FAMI-QS",
@@ -26,6 +101,13 @@ export const services = [
     category: "Food Safety Standards System",
     image: "/images/foodsafety/FAMI-QS.jpg",
     link: "/services/fami-qs",
+    content: `
+<article class="prose prose-lg max-w-none text-gray-800">
+ <p>โดยที่ปรึกษาด้านระบบ FAMI – QS จะดำเนินงานใดจัดการระบบตามกฎระเบียบและข้อบังคับเพื่อควบคุมอาหารสัตว์ที่จะนำเข้าหรือจำหน่าย 
+ หรือแม้แต่ทำเป็นส่วนผสมในอาหารสัตว์ ให้มีคุณภาพและความปลอดภัยอย่างสูงสุด ดังนั้น ที่ปรึกษา FAMI-QS จะมีการตรวจสอบทั้งผู้ผลิตหรือผู้ที่มีส่วนเกี่ยวข้องที่อยู่ในระบบของห่วงโซ่อาหาร</p>
+
+</article>
+`
   },
   {
     title: "บริการที่ปรึกษามาตรฐาน IFS ผู้ส่งออกอาหารไปยุโรป",
@@ -34,6 +116,43 @@ export const services = [
     category: "Food Safety Standards System",
     image: "/images/foodsafety/IFS.jpg",
     link: "/services/ifs",
+    content: `
+<article class="space-y-8 text-gray-800 leading-relaxed">
+
+  <p>
+    ในสภาวะการแข่งขันของอุตสาหกรรมอาหาร การยึดมั่นในมาตรฐานคุณภาพและความปลอดภัยที่เข้มงวดเป็นสิ่งสำคัญ หนึ่งในมาตรฐานที่ได้รับการยอมรับอย่างกว้างขวางคือ 
+    <strong>International Featured Standard (IFS) Food</strong> ในบทความนี้ เราจะเจาะลึกถึงความซับซ้อนของ IFS Food ความสำคัญ และวิธีที่ธุรกิจต่างๆ สามารถบรรลุและรักษาใบรับรองเพื่อเพิ่มสถานะในตลาดและความไว้วางใจของผู้บริโภค
+  </p>
+
+  <section>
+    <h2 class="text-2xl font-semibold mb-4 text-[#a37d58]">1. IFS Food คืออะไร?</h2>
+    <p class="mb-4">
+      IFS Food เป็นมาตรฐานความปลอดภัยของอาหารที่ได้รับการยอมรับทั่วโลก ซึ่งพัฒนาโดย International Featured Standards เป็นกรอบสำหรับการประเมินและรับรองความปลอดภัยของอาหารและระบบการจัดการคุณภาพในโรงงานผลิตและแปรรูปอาหาร การปฏิบัติตาม IFS Food ช่วยให้ธุรกิจแสดงความมุ่งมั่นในการผลิตผลิตภัณฑ์อาหารที่ปลอดภัยและมีคุณภาพสูง
+    </p>
+  </section>
+
+  <section class="text-gray-700 pb-5 border-b border-gray-300 mb-6">
+    <h2 class="text-2xl font-semibold mb-4 text-[#a37d58]">2. วัตถุประสงค์หลักของ IFS Food</h2>
+    <p class="mb-4">
+      วัตถุประสงค์หลักของ IFS Food เกี่ยวข้องกับการรับรองความปลอดภัยของอาหาร การรักษาคุณภาพของผลิตภัณฑ์ และการตอบสนองความต้องการของลูกค้า วัตถุประสงค์หลักบางประการ ได้แก่
+    </p>
+    <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4">
+      <li>การกำหนดวิธีการอย่างเป็นระบบในการบ่งชี้อันตราย การประเมินความเสี่ยง และมาตรการควบคุม</li>
+      <li>ใช้ระบบการจัดการคุณภาพที่เข้มงวด รวมถึงการตรวจสอบย้อนกลับและการจัดทำเอกสาร</li>
+      <li>อำนวยความสะดวกในการปรับปรุงอย่างต่อเนื่องผ่านการตรวจสอบอย่างสม่ำเสมอและการดำเนินการแก้ไข</li>
+      <li>การปฏิบัติตามข้อผูกพันทางกฎหมายและข้อกำหนดเฉพาะของอุตสาหกรรม</li>
+    </ul>
+  </section>
+
+  <section>
+    <p>
+      การบรรลุและรักษาไว้ซึ่งใบรับรอง IFS Food เป็นการเคลื่อนไหวเชิงกลยุทธ์สำหรับมืออาชีพในอุตสาหกรรมอาหาร โดยมีเป้าหมายเพื่อรับรองมาตรฐานความปลอดภัยและคุณภาพของอาหารในระดับสูงสุด ด้วยการปฏิบัติตามแนวทางที่สรุปไว้ในบทความนี้ ธุรกิจสามารถสร้างรากฐานที่แข็งแกร่ง เพิ่มสถานะในตลาดของตน และได้เปรียบในการแข่งขันในอุตสาหกรรม ในขณะเดียวกันก็มั่นใจได้ถึงความไว้วางใจและความพึงพอใจของผู้บริโภค
+    </p>
+  </section>
+
+</article>
+
+`
   },
   {
     title: "บริการที่ปรึกษาระบบ BRC/IOP บรรจุภัณฑ์อาหาร",
