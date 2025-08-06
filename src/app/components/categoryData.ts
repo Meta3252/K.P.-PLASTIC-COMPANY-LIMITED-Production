@@ -16,8 +16,8 @@ export const services = [
     description:
       "หลักสูตรการฝึกอบรม GHP CODEX GHP วัตถุประสงค์ เพื่อให้ผู้เข้าร่วมอบรมมีความรู้และความเข้าใจเกี่ยวกับระบบการจัดการและควบคุมคุณภาพตามข้อกำหนดของ CODEX GHP",
     category: "Food Safety Standards System",
-    image: "/images/foodsafety/GMP.jpg",
-    link: "/services/gmp",
+    image: "/images/foodsafety/GHP.jpg",
+    link: "/services/GHP",
     content: `
 <article class="prose prose-lg max-w-none text-gray-800">
 
@@ -25,10 +25,10 @@ export const services = [
   <section class="border-b border-gray-300 pb-6 mb-8">
     <h2 class="text-2xl font-bold text-[#a37d58] mb-4">วัตถุประสงค์</h2>
     <ul class="list-disc list-inside space-y-2">
-      <li>ให้ความรู้ความเข้าใจเกี่ยวกับระบบการจัดการและควบคุมคุณภาพตามข้อกำหนด CODEX GMP</li>
-      <li>ทราบวิธีดำเนินงานตามระบบมาตรฐาน GMP อย่างถูกต้อง</li>
-      <li>ประยุกต์ใช้ข้อกำหนด GMP ในสถานประกอบการได้อย่างมีประสิทธิภาพ</li>
-      <li>เตรียมความพร้อมสำหรับการตรวจรับรองระบบ GMP และการตรวจติดตามภายใน</li>
+      <li>ให้ความรู้ความเข้าใจเกี่ยวกับระบบการจัดการและควบคุมคุณภาพตามข้อกำหนด CODEX GHP</li>
+      <li>ทราบวิธีดำเนินงานตามระบบมาตรฐาน GHP อย่างถูกต้อง</li>
+      <li>ประยุกต์ใช้ข้อกำหนด GHP ในสถานประกอบการได้อย่างมีประสิทธิภาพ</li>
+      <li>เตรียมความพร้อมสำหรับการตรวจรับรองระบบ GHP และการตรวจติดตามภายใน</li>
     </ul>
   </section>
 
@@ -37,14 +37,14 @@ export const services = [
     <h2 class="text-2xl font-bold text-[#a37d58] mb-4">รายละเอียดของหลักสูตร</h2>
     <ol class="list-decimal list-inside space-y-4">
       <li>
-        <strong>พื้นฐานและความเป็นมาของ GMP</strong>
+        <strong>พื้นฐานและความเป็นมาของ GHP</strong>
         <ul class="list-disc list-inside ml-6 mt-2 space-y-1 text-base">
-          <li>อธิบายความสำคัญของ GMP ในอุตสาหกรรมอาหาร</li>
-          <li>ประโยชน์ของการนำระบบ GMP มาใช้ในกระบวนการผลิต</li>
+          <li>อธิบายความสำคัญของ GHP ในอุตสาหกรรมอาหาร</li>
+          <li>ประโยชน์ของการนำระบบ GHP มาใช้ในกระบวนการผลิต</li>
         </ul>
       </li>
       <li>
-        <strong>ข้อกำหนดของระบบ GMP</strong>
+        <strong>ข้อกำหนดของระบบ GHP</strong>
         <ul class="list-disc list-inside ml-6 mt-2 space-y-1 text-base">
           <li>หลักเกณฑ์เกี่ยวกับสถานที่ อุปกรณ์ และสิ่งแวดล้อม</li>
           <li>ข้อกำหนดด้านการผลิต การควบคุมคุณภาพ และสุขลักษณะ</li>
@@ -53,21 +53,21 @@ export const services = [
       <li>
         <strong>ตัวอย่างกรณีศึกษาและการประยุกต์ใช้</strong>
         <ul class="list-disc list-inside ml-6 mt-2 space-y-1 text-base">
-          <li>ยกตัวอย่างจากโรงงานที่สอดคล้องกับข้อกำหนด GMP</li>
-          <li>ปรับปรุงกระบวนการให้ตรงตามมาตรฐาน GMP</li>
+          <li>ยกตัวอย่างจากโรงงานที่สอดคล้องกับข้อกำหนด GHP</li>
+          <li>ปรับปรุงกระบวนการให้ตรงตามมาตรฐาน GHP</li>
         </ul>
       </li>
       <li>
         <strong>การตรวจติดตามและเตรียมความพร้อมก่อนการรับรอง</strong>
         <ul class="list-disc list-inside ml-6 mt-2 space-y-1 text-base">
-          <li>ขั้นตอนการตรวจติดตามภายในตามระบบ GMP</li>
-          <li>การเตรียมความพร้อมสำหรับการตรวจรับรองระบบ GMP</li>
+          <li>ขั้นตอนการตรวจติดตามภายในตามระบบ GHP</li>
+          <li>การเตรียมความพร้อมสำหรับการตรวจรับรองระบบ GHP</li>
         </ul>
       </li>
       <li>
-        <strong>เอกสารระบบ GMP</strong>
+        <strong>เอกสารระบบ GHP</strong>
         <ul class="list-disc list-inside ml-6 mt-2 space-y-1 text-base">
-          <li>จัดทำเอกสารและบันทึกข้อมูลตามข้อกำหนด GMP</li>
+          <li>จัดทำเอกสารและบันทึกข้อมูลตามข้อกำหนด GHP</li>
           <li>การจัดเก็บเอกสารเพื่อความพร้อมในการตรวจสอบ</li>
         </ul>
       </li>
@@ -84,7 +84,7 @@ export const services = [
   <section>
     <h2 class="text-2xl font-bold text-[#a37d58] mb-4">ผลลัพธ์ที่คาดหวัง</h2>
     <ul class="list-disc list-inside space-y-2">
-      <li>ผู้เข้าอบรมสามารถปฏิบัติตามข้อกำหนด GMP ได้อย่างถูกต้อง</li>
+      <li>ผู้เข้าอบรมสามารถปฏิบัติตามข้อกำหนด GHP ได้อย่างถูกต้อง</li>
       <li>ได้รับใบรับรองที่ใช้ยืนยันกับ Auditor ได้</li>
     </ul>
   </section>
@@ -103,7 +103,7 @@ export const services = [
     link: "/services/fami-qs",
     content: `
 <article class="prose prose-lg max-w-none text-gray-800">
- <p>โดยที่ปรึกษาด้านระบบ FAMI – QS จะดำเนินงานใดจัดการระบบตามกฎระเบียบและข้อบังคับเพื่อควบคุมอาหารสัตว์ที่จะนำเข้าหรือจำหน่าย 
+ <p style="text-indent: 2.5em;">โดยที่ปรึกษาด้านระบบ FAMI – QS จะดำเนินงานใดจัดการระบบตามกฎระเบียบและข้อบังคับเพื่อควบคุมอาหารสัตว์ที่จะนำเข้าหรือจำหน่าย 
  หรือแม้แต่ทำเป็นส่วนผสมในอาหารสัตว์ ให้มีคุณภาพและความปลอดภัยอย่างสูงสุด ดังนั้น ที่ปรึกษา FAMI-QS จะมีการตรวจสอบทั้งผู้ผลิตหรือผู้ที่มีส่วนเกี่ยวข้องที่อยู่ในระบบของห่วงโซ่อาหาร</p>
 
 </article>
@@ -119,21 +119,21 @@ export const services = [
     content: `
 <article class="space-y-8 text-gray-800 leading-relaxed">
 
-  <p>
+  <p style="text-indent: 2.5em;">
     ในสภาวะการแข่งขันของอุตสาหกรรมอาหาร การยึดมั่นในมาตรฐานคุณภาพและความปลอดภัยที่เข้มงวดเป็นสิ่งสำคัญ หนึ่งในมาตรฐานที่ได้รับการยอมรับอย่างกว้างขวางคือ 
     <strong>International Featured Standard (IFS) Food</strong> ในบทความนี้ เราจะเจาะลึกถึงความซับซ้อนของ IFS Food ความสำคัญ และวิธีที่ธุรกิจต่างๆ สามารถบรรลุและรักษาใบรับรองเพื่อเพิ่มสถานะในตลาดและความไว้วางใจของผู้บริโภค
   </p>
 
   <section>
     <h2 class="text-2xl font-semibold mb-4 text-[#a37d58]">1. IFS Food คืออะไร?</h2>
-    <p class="mb-4">
+    <p class="mb-4" style="text-indent: 2.5em;">
       IFS Food เป็นมาตรฐานความปลอดภัยของอาหารที่ได้รับการยอมรับทั่วโลก ซึ่งพัฒนาโดย International Featured Standards เป็นกรอบสำหรับการประเมินและรับรองความปลอดภัยของอาหารและระบบการจัดการคุณภาพในโรงงานผลิตและแปรรูปอาหาร การปฏิบัติตาม IFS Food ช่วยให้ธุรกิจแสดงความมุ่งมั่นในการผลิตผลิตภัณฑ์อาหารที่ปลอดภัยและมีคุณภาพสูง
     </p>
   </section>
 
   <section class="text-gray-700 pb-5 border-b border-gray-300 mb-6">
     <h2 class="text-2xl font-semibold mb-4 text-[#a37d58]">2. วัตถุประสงค์หลักของ IFS Food</h2>
-    <p class="mb-4">
+    <p class="mb-4" style="text-indent: 2.5em;">
       วัตถุประสงค์หลักของ IFS Food เกี่ยวข้องกับการรับรองความปลอดภัยของอาหาร การรักษาคุณภาพของผลิตภัณฑ์ และการตอบสนองความต้องการของลูกค้า วัตถุประสงค์หลักบางประการ ได้แก่
     </p>
     <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4">
@@ -145,14 +145,12 @@ export const services = [
   </section>
 
   <section>
-    <p>
+    <p style="text-indent: 2.5em;">
       การบรรลุและรักษาไว้ซึ่งใบรับรอง IFS Food เป็นการเคลื่อนไหวเชิงกลยุทธ์สำหรับมืออาชีพในอุตสาหกรรมอาหาร โดยมีเป้าหมายเพื่อรับรองมาตรฐานความปลอดภัยและคุณภาพของอาหารในระดับสูงสุด ด้วยการปฏิบัติตามแนวทางที่สรุปไว้ในบทความนี้ ธุรกิจสามารถสร้างรากฐานที่แข็งแกร่ง เพิ่มสถานะในตลาดของตน และได้เปรียบในการแข่งขันในอุตสาหกรรม ในขณะเดียวกันก็มั่นใจได้ถึงความไว้วางใจและความพึงพอใจของผู้บริโภค
     </p>
   </section>
 
-</article>
-
-`
+</article>`
   },
   {
     title: "บริการที่ปรึกษาระบบ BRC/IOP บรรจุภัณฑ์อาหาร",
@@ -161,6 +159,17 @@ export const services = [
     category: "Food Safety Standards System",
     image: "/images/foodsafety/BRC.jpg",
     link: "/services/brc-iop",
+    content: `<article class="space-y-8 text-gray-800 leading-relaxed">
+
+  <strong>
+    British Retail Consortium และ Institute of Food Packaging</strong> 
+    <p style="text-indent: 2.5em;">มีบทบาทสำคัญในการรับรองความปลอดภัยและความยั่งยืนของบรรจุภัณฑ์อาหารในสหราชอาณาจักร องค์กรเหล่านี้ได้กำหนดมาตรฐานอุตสาหกรรม 
+    ส่งเสริมแนวปฏิบัติที่เป็นมิตรต่อสิ่งแวดล้อม และเพิ่มศักยภาพให้ธุรกิจต่างๆ ในการตัดสินใจเลือกบรรจุภัณฑ์<p/>
+  <p>
+    BRC และ IFP ให้ความสำคัญกับความปลอดภัยของอาหารและสิ่งแวดล้อมเป็นลำดับแรก เป็นเครื่องมือในการส่งเสริมอนาคตที่ผู้บริโภคสามารถเพลิดเพลินกับผลิตภัณฑ์อาหารบรรจุภัณฑ์ที่ปลอดภัย ยั่งยืน และมีความรับผิดชอบ
+  </p>
+</article>
+`
   },
   {
     title: "บริการที่ปรึกษาระบบ SQF2000",
@@ -169,6 +178,12 @@ export const services = [
     category: "Food Safety Standards System",
     image: "/images/foodsafety/SQF.jpg",
     link: "/services/sqf2000",
+    content: `<article class="space-y-8 text-gray-800 leading-relaxed">
+  <p style="text-indent: 2.5em;">
+    การเกษตรและอาหาร ระบบมาตรฐานคุณภาพที่สอดคล้องกับหลักการใช้ระบบ HACCP ของคณะกรรมการ CODEX โดยมุ่งเน้นในเรื่องคุณภาพอาหารและความปลอดภัยทางอาหาร ซึ่งสอดคล้องเป็นไปตามระบบมาตรฐาน ISO9000
+  </p>
+</article>
+`
   },
   {
     title: "บริการที่ปรึกษาระบบมาตรฐาน ISO22000",
@@ -177,6 +192,15 @@ export const services = [
     category: "Food Safety Standards System",
     image: "/images/foodsafety/ISO22000.jpg",
     link: "/services/iso22000",
+    content: `<article class="space-y-8 text-gray-800 leading-relaxed">
+<p style="text-indent: 2.5em;">
+  ระบบการจัดการตัวใหม่ที่เกี่ยวข้องโดยตรงกับผู้ประกอบกิจการในอุตสาหกรรมอาหารและห่วงโซ่อาหาร ซึ่งมาตรฐาน ISO 22000 จะครอบคลุมทั้งข้อกำหนดของ GHP, HACCP และข้อกำหนดสำหรับระบบการจัดการในองค์กร
+  มาตรฐานดังกล่าวเน้นที่ผู้ประกอบการที่ต้องการพัฒนาการจัดการความปลอดภัยของอาหารให้มีความชัดเจน
+  โดยจะเป็นที่รวมของข้อกำหนดในมาตรฐานต่างๆที่ใช้อยู่ในปัจจุบันเพื่อประกันความปลอดภัยของสินค้าตลอดเส้นทางห่วงโซ่อาหาร
+</p>
+
+</article>
+`
   },
   {
     title: "บริการที่ปรึกษาระบบมาตรฐาน FSSC22000",
@@ -185,6 +209,15 @@ export const services = [
     category: "Food Safety Standards System",
     image: "/images/foodsafety/FSSC22000.jpg",
     link: "/services/fssc22000",
+    content: `<article class="space-y-8 text-gray-800 leading-relaxed">
+<p style="text-indent: 2.5em;">
+ เพื่อให้เป็นมาตรฐานการรับรองความปลอดภัยสำหรับการผลิตอาหาร โดยรวมมาตรฐาน ISO 22000 หรือ 
+ Food Safety Management System รับรองโดย Global Food Safety Initiative (GFSI) กับมาตรฐาน Publicly Available Specification 220 
+ ไว้ด้วยกัน โดยมาตรฐาน FSSC 22000 ได้รับการสนับสนุนอย่างดีจากสมาพันธ์อาหารและอุตสาหกรรมเครื่องดื่มของสหภาพยุโรป
+</p>
+
+</article>
+`
   },
   {
     title: "บริการที่ปรึกษาระบบมาตรฐาน Global GAP",
@@ -193,6 +226,14 @@ export const services = [
     category: "Food Safety Standards System",
     image: "/images/foodsafety/Global-Gap.jpg",
     link: "/services/global-gap",
+    content: `<article class="space-y-8 text-gray-800 leading-relaxed">
+<p style="text-indent: 2.5em;">
+ มีที่มาจากมาตรฐาน GAP หรือ Good Agricultural Practice ของ องค์การอาหารและเกษตรกรรม แห่งสหประชาชาติ (United Nations Food and Agriculture Organization-FAQ) 
+ ซึ่งเป็นแนวคิดเรื่องการทำเกษตรอย่างยั่งยืน ใส่ใจสิ่งแวดล้อม และสังคม
+</p>
+
+</article>
+`
   },
   {
     title: "บริการที่ปรึกษาขอการรับรอง HALAL",
@@ -201,6 +242,14 @@ export const services = [
     category: "Food Safety Standards System",
     image: "/images/foodsafety/HALAL.jpg",
     link: "/services/halal",
+    content: `<article class="space-y-8 text-gray-800 leading-relaxed">
+<p style="text-indent: 2.5em;">
+ ดั้งนั้นเราจึงกล่าวได้ว่า “อาหารฮาลาล” คือ อาหารที่ได้ผ่านกรรมวิธีในการทำ ผสม ปรุงประกอบ หรือแปรสภาพ ตามศาสนาบัญญัติของศาสนาอิสลามนั้นเอง เป็นการรับประกันว่าชาวมุสลิมโดยทั่วไปสามารถบริโภคอาหาร 
+ หรืออุปโภคสินค้าหรือบริการต่างๆได้โดยสนิทใจ เราสามารถสังเกตผลิตภัณฑ์ว่าเป็น “ฮาลาล” หรือไม่นั้นได้จากการประทับตรา “ฮาลาล” ที่ข้างบรรจุภัณฑ์นั้นเป็นสำคัญ
+</p>
+
+</article>
+`
   },
   {
     title: "บริการที่ปรึกษา HACCP",
@@ -209,6 +258,59 @@ export const services = [
     category: "Food Safety Standards System",
     image: "/images/foodsafety/HACCP.jpg",
     link: "/services/haccp",
+    content: `<article class="space-y-8 text-gray-800 leading-relaxed">
+  <h2 class="text-2xl font-semibold">
+    HACCP คืออะไร?
+  </h2>
+
+  <p style="text-indent: 2.5em;">
+    <strong>HACCP</strong> ย่อมาจาก <strong>Hazard Analysis Critical Control Point</strong> 
+    โดยเป็นมาตรฐานควบคุมดูแลความปลอดภัยในทุกกระบวนการผลิตอาหาร เพื่อป้องกันอันตรายและสิ่งปนเปื้อนในอาหาร 
+    ที่ผู้บริโภคอาจได้รับจากการบริโภคอาหาร ผ่านกระบวนการวางแผนป้องกันล่วงหน้า รวมทั้งการควบคุมและเฝ้าระวัง 
+    เพื่อให้ผู้บริโภคมั่นใจว่ามาตรฐานที่กำหนดขึ้นนั้นมีประสิทธิภาพตลอดเวลา โดย HACCP เป็นมาตรฐานสากลที่ได้รับความนิยมและยอมรับจากนานาชาติทั่วโลก
+  </p>
+
+  <hr class="border-t border-gray-300 my-6">
+
+  <h3 class="text-xl font-medium">
+    แล้ว GHP อย่างเดียวไม่เพียงพอหรือ?
+  </h3>
+
+  <p style="text-indent: 2.5em;">
+    หลายคนอาจสงสัยว่า หากมีการรับรองมาตรฐาน <strong>GHP</strong> แล้ว ทำไมยังจำเป็นต้องมี HACCP ด้วย? 
+    คำตอบคือ GHP เป็นพื้นฐานที่เน้นกระบวนการผลิตที่ดีและถูกต้องตามหลักสุขลักษณะ 
+    แต่ HACCP จะเข้ามาเสริมความมั่นใจในระดับที่สูงขึ้น โดยเฉพาะในเรื่องของการตรวจสอบและควบคุมความเสี่ยงจากอันตรายต่างๆ 
+    ที่อาจเกิดขึ้นในกระบวนการผลิต
+  </p>
+
+  <hr class="border-t border-gray-300 my-6">
+
+  <h3 class="text-xl font-medium">
+    ความสำคัญของการมีทั้ง GHP และ HACCP
+  </h3>
+
+  <p style="text-indent: 2.5em;">
+    ดังนั้น หากโรงงานอาหารหรือยาได้รับการรับรองทั้งมาตรฐาน <strong>GHP</strong> และ <strong>HACCP</strong> 
+    จะช่วยเสริมสร้างภาพลักษณ์ที่ดีให้กับองค์กร เพิ่มความน่าเชื่อถือในสายตาของลูกค้าและคู่ค้าทั้งในประเทศและระดับสากล 
+    อีกทั้งยังสามารถขยายตลาดสู่ต่างประเทศได้อย่างมั่นใจ
+  </p>
+
+</article>`
+  },
+  {
+    title: "บริการรับจดอย.",
+    description:
+      "ทางบริษัท บีซัสเทน จำกัด ให้บริการจดทะเบียนเอกสารต่างๆอย่างครบวงจร",
+    category: "Food Safety Standards System",
+    image: "/images/foodsafety/CS.jpg",
+    link: "/services/ghp",
+    content: `<article class="space-y-8 text-gray-800 leading-relaxed">
+
+  <p style="text-indent: 2.5em;">
+    โดยผู้เชี่ยวชาญ ที่มีประสบการณ์ สูงในการจดทะเบียน อย. ซึ่งทางเรามีบริการครบวงจร 
+    ตั้งแต่บริการตรวจสอบคัดกรองข้อมูลเบื้องต้นก่อนการขอจด อย. เพื่อลดปัญหาการถูกปฏิเสธการจดอย. และเพิ่มความมั่นใจให้กับผู้ใช้บริการจากเราว่า สามารถจดแจ้งได้
+  </p>
+</article>` 
   },
   // International Organization For Standardization
 
@@ -223,7 +325,7 @@ export const services = [
   {
     title: "บริการที่ปรึกษาระบบ ISO 15378",
     description:
-      "ระบบ ISO 15378 คือ International Standard สำหรับบรรจุภัณฑ์ขั้นแรก ที่ใช้ในทางการแพทย์โดยรวมสิ่งจำเป็นสำหรับการประยุกต์ใช้ ISO9001 กับ Good Manufacturing Practice(GMP)",
+      "ระบบ ISO 15378 คือ International Standard สำหรับบรรจุภัณฑ์ขั้นแรก ที่ใช้ในทางการแพทย์โดยรวมสิ่งจำเป็นสำหรับการประยุกต์ใช้ ISO9001 กับ Good Manufacturing Practice(GHP)",
     category: "International Organization For Standardization",
     image: "/images/international-organization/ISO15378.jpg",
     link: "/services/ISO15378",
