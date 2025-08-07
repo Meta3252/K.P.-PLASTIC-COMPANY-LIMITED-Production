@@ -55,7 +55,7 @@ export default function AboutCompany() {
             {/* Button */}
             <div className="pt-8">
               <a
-                href="#more-info"
+                href="/services"
                 className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium tracking-wide text-white transition duration-300 ease-in-out rounded-lg shadow-md group bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-yellow-500 hover:to-amber-500"
               >
                 <span className="absolute inset-0 w-full h-full transition-transform duration-300 ease-in-out transform translate-x-full bg-white opacity-10 group-hover:translate-x-0"></span>

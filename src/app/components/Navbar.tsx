@@ -133,7 +133,7 @@ export default function Navbar() {
 
             <Button
               variant="contained"
-              href="/quote"
+              href="/contact"
               sx={{
                 bgcolor: '#d4af7f',
                 color: '#5c4433',

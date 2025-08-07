@@ -8,6 +8,7 @@ import 'swiper/css/effect-coverflow';
 import { Autoplay, Pagination, EffectCoverflow } from 'swiper/modules';
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 export default function HeroSlider() {
   const slides = [
@@ -16,12 +17,14 @@ export default function HeroSlider() {
       title: 'เริ่มต้นการพัฒนาโรงงานของคุณวันนี้',
       subtitle: 'ที่ปรึกษามืออาชีพสำหรับระบบโรงงานครบวงจร',
       button: 'เริ่มต้นเลย',
+      link: '/services',
     },
     {
       image: '/Hero_2.jpg',
       title: 'ปรึกษาการทำระบบ',
       subtitle: 'บริการให้คำปรึกษาเบื้องต้นสำหรับการจัดทำระบบ',
       button: 'ติดต่อเรา',
+      link: '/contact',
     },
     {
       image: '/Hero_3.jpg',
@@ -29,6 +32,7 @@ export default function HeroSlider() {
       subtitle:
         'เราพร้อมที่จะดูแลลูกค้าอย่างใกล้ชิดเปรียบดั่งคนในครอบครัวเพื่อให้ลูกค้ามีความมั่นใจ',
       button: 'ดูเพิ่มเติม',
+      link: '/about',
     },
   ];
 
@@ -67,7 +71,7 @@ export default function HeroSlider() {
         pagination={{ clickable: true }}
         speed={700}
         slidesPerView={1}
-        centeredSlides={false} // ปิด centeredSlides สำหรับมือถือ
+        centeredSlides={false}
         effect="slide"
         breakpoints={{
           768: {
@@ -116,12 +120,11 @@ export default function HeroSlider() {
                   {slide.subtitle}
                 </p>
 
-                <button
-                  className="px-5 py-2 sm:px-6 sm:py-3 bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-amber-500 hover:to-yellow-400 rounded-full text-white font-semibold shadow-md transition-all"
-                  onClick={() => alert(`Clicked: ${slide.button}`)}
-                >
-                  {slide.button}
-                </button>
+                <Link href={slide.link}>
+                  <button className="px-5 py-2 sm:px-6 sm:py-3 bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-amber-500 hover:to-yellow-400 rounded-full text-white font-semibold shadow-md transition-all">
+                    {slide.button}
+                  </button>
+                </Link>
               </motion.div>
             </div>
           </SwiperSlide>
