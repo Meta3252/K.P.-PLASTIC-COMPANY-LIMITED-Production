@@ -303,7 +303,7 @@ export const services = [
       "ทางบริษัท บีซัสเทน จำกัด ให้บริการจดทะเบียนเอกสารต่างๆอย่างครบวงจร",
     category: "Food Safety Standards System",
     image: "/images/foodsafety/CS.jpg",
-    link: "/services/ghp",
+    link: "/services/FDA",
     content: `<article class="space-y-8 text-gray-800 leading-relaxed">
 
   <p style="text-indent: 2.5em;">
