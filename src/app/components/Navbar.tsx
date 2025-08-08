@@ -207,7 +207,7 @@ export default function Navbar() {
 
           <Button
             variant="contained"
-            href="/quote"
+            href="/contact"
             fullWidth
             sx={{
               bgcolor: '#d4af7f',
