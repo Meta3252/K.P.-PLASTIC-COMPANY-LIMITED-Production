@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 export default function Breadcrumb() {
-    const pathname = usePathname();
+    const pathname = usePathname() || ""; // ถ้า null ให้เป็น string ว่าง
     const pathParts = pathname.split('/').filter(Boolean);
 
     const crumbs = pathParts.map((part, index) => {
