@@ -224,7 +224,7 @@ export const services = [
     description:
       "Global GAP คือ มาตรฐานภาคเอกชนสำหรับการผลิตสินค้าเกษตรของกลุ่มผู้ค้าปลีกในยุโรป",
     category: "Food Safety Standards System",
-    image: "/images/foodsafety/Global-Gap.jpg",
+    image: "/images/foodsafety/GLOBAL.jpg",
     link: "/services/global-gap",
     content: `<article class="space-y-8 text-gray-800 leading-relaxed">
 <p style="text-indent: 2.5em;">
