@@ -35,8 +35,8 @@ body {
 }
 
 .swiper-pagination-bullet-active {
-  background: #d6b760 !important;
-  box-shadow: 0 0 8px #d6b760, 0 0 16px #d6b760;
+  background: #149144 !important;
+  box-shadow: 0 0 8px #149144, 0 0 16px #149144;
   transform: scale(1.2);
 }
 

@@ -14,23 +14,23 @@ export default function HeroSlider() {
   const slides = [
     {
       image: '/Hero_1.jpg',
-      title: 'เริ่มต้นการพัฒนาโรงงานของคุณวันนี้',
-      subtitle: 'ที่ปรึกษามืออาชีพสำหรับระบบโรงงานครบวงจร',
-      button: 'เริ่มต้นเลย',
-      link: '/services',
-    },
-    {
-      image: '/Hero_2.jpg',
-      title: 'ปรึกษาการทำระบบ',
-      subtitle: 'บริการให้คำปรึกษาเบื้องต้นสำหรับการจัดทำระบบ',
+      title: 'ให้คำปรึกษาโดยผู้เชี่ยวชาญ',
+      subtitle: 'คัดสรรวัตถุดิบพลาสติกคุณภาพ รองรับงานอุตสาหกรรมหลากหลาย เช่น บรรจุภัณฑ์ ชิ้นส่วน และงานขึ้นรูป',
       button: 'ติดต่อเรา',
       link: '/contact',
     },
     {
+      image: '/Hero_2.jpg',
+      title: 'ส่งไว ตรงเวลา',
+      subtitle: 'มีสต็อกพร้อมจัดส่ง รองรับออเดอร์เร่งด่วน ลดเวลาหยุดไลน์ผลิตของคุณ',
+      button: 'ดูบริการ',
+      link: '/services',
+    },
+    {
       image: '/Hero_3.jpg',
-      title: 'บริษัทที่ปรึกษาการจัดวางระบบมาตรฐานสากล',
+      title: 'เม็ดพลาสติกคุณภาพสูง',
       subtitle:
-        'เราพร้อมที่จะดูแลลูกค้าอย่างใกล้ชิดเปรียบดั่งคนในครอบครัวเพื่อให้ลูกค้ามีความมั่นใจ',
+        'คัดสรรวัตถุดิบพลาสติกคุณภาพ รองรับงานอุตสาหกรรมหลากหลาย เช่น บรรจุภัณฑ์ ชิ้นส่วน และงานขึ้นรูป',
       button: 'ดูเพิ่มเติม',
       link: '/about',
     },
@@ -121,7 +121,17 @@ export default function HeroSlider() {
                 </p>
 
                 <Link href={slide.link}>
-                  <button className="px-5 py-2 sm:px-6 sm:py-3 bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-amber-500 hover:to-yellow-400 rounded-full text-white font-semibold shadow-md transition-all">
+                  <button className="
+                     px-5 py-2 sm:px-6 sm:py-3
+                      bg-gradient-to-r from-emerald-700 via-green-600 to-emerald-500
+                        hover:from-emerald-600 hover:via-green-500 hover:to-emerald-400
+                        rounded-full text-white font-semibold
+                        shadow-md hover:shadow-2xl
+                        transform-gpu
+                        transition-all duration-500 ease-out
+                        hover:-translate-y-1 hover:scale-[1.03]
+                        active:scale-[0.97]
+                      ">
                     {slide.button}
                   </button>
                 </Link>
