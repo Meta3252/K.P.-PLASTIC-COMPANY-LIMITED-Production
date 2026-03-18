@@ -23,7 +23,7 @@ const NavLink = styled(Link, {
   fontWeight: 500,
   fontSize: '1.125rem',
   cursor: 'pointer',
-  color: active ? '#a37d58' : '#6a4d38',
+  color: active ? '#149144' : '#149144',
   textDecoration: 'none',
   transition: 'color 0.3s ease',
 
@@ -34,19 +34,19 @@ const NavLink = styled(Link, {
     bottom: 0,
     height: 2,
     width: active ? '100%' : 0,
-    backgroundColor: '#ffd28a',
-    boxShadow: active ? '0 0 8px #ffd28a' : 'none',
+    backgroundColor: '#149144',
+    boxShadow: active ? '0 0 8px #149144' : 'none',
     transition: 'width 0.3s ease',
   },
 
   '&:hover::after': {
     width: '100%',
-    backgroundColor: '#ffd28a',
-    boxShadow: '0 0 8px #ffd28a',
+    backgroundColor: '#149144',
+    boxShadow: '0 0 8px #149144',
   },
 
   '&:hover': {
-    color: '#a37d58',
+    color: '#149144a6',
   },
 }));
 
@@ -85,33 +85,33 @@ export default function Navbar() {
         color="transparent"
         elevation={1}
         sx={{
-          backgroundColor: 'rgba(248, 245, 240, 0.95)',
+          backgroundColor: 'rgba(240, 248, 242, 0.95)',
           backdropFilter: 'blur(6px)',
-          borderBottom: '1px solid #f8ca91',
+          borderBottom: '1px solid #149144',
           zIndex: (theme) => theme.zIndex.drawer + 1,
         }}
       >
         <Toolbar sx={{ maxWidth: 1280, mx: 'auto', width: '100%', px: 2 }}>
           <Link href="/" style={{ textDecoration: 'none' }}>
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-              <img src="/LogoBesustain.png" alt="Logo" style={{ height: 100, objectFit: 'contain' }} />
+              <img src="/KpLogo.png" alt="Logo" style={{ height: 100, objectFit: 'contain' }} />
               <Box>
                 <Typography
                   variant="h6"
                   sx={{
                     fontFamily: 'serif',
                     fontWeight: 'bold',
-                    color: '#5c4433',
+                    color: '#2a6441',
                     fontSize: { xs: 22, md: 26 },
                     lineHeight: 1,
                   }}
                 >
-                  Besustain
+                  K.P.PLASTIC
                 </Typography>
                 <Typography
                   sx={{
                     fontSize: { xs: 12, md: 14 },
-                    color: '#d4af7f',
+                    color: '#149144',
                     textTransform: 'uppercase',
                     letterSpacing: '0.1em',
                   }}
@@ -135,17 +135,17 @@ export default function Navbar() {
               variant="contained"
               href="/contact"
               sx={{
-                bgcolor: '#d4af7f',
-                color: '#5c4433',
+                bgcolor: '#16b352',
+                color: '#fff8f0',
                 fontWeight: 'bold',
                 borderRadius: '20px',
                 px: 3,
                 py: 1,
                 textTransform: 'none',
-                boxShadow: '0 0 10px #d4af7f',
+                boxShadow: '0 0 10px #149144  ',
                 '&:hover': {
-                  bgcolor: '#b89558',
-                  boxShadow: '0 0 15px #b89558',
+                  bgcolor: '#1a8b45',
+                  boxShadow: '0 0 15px #149144',
                 },
               }}
             >
@@ -158,7 +158,7 @@ export default function Navbar() {
             edge="end"
             aria-label="open menu"
           >
-            <MenuIcon fontSize="large" sx={{ color: '#5c4433' }} />
+            <MenuIcon fontSize="large" sx={{ color: '#149144' }} />
           </IconButton>
 
         </Toolbar>
@@ -176,7 +176,7 @@ export default function Navbar() {
             width: 250,
             backgroundColor: 'rgba(248, 245, 240, 0.95)',
             backdropFilter: 'blur(6px)',
-            borderRight: '1px solid #f8ca91',
+            borderRight: '1px solid #149144',
           },
         }}
       >
@@ -210,17 +210,17 @@ export default function Navbar() {
             href="/contact"
             fullWidth
             sx={{
-              bgcolor: '#d4af7f',
-              color: '#5c4433',
+              bgcolor: '#16b352',
+              color: '#fff8f0',
               fontWeight: 'bold',
               borderRadius: '20px',
-              mt: 1,
-              py: 1.5,
+              px: 3,
+              py: 1,
               textTransform: 'none',
-              boxShadow: '0 0 10px #d4af7f',
+              boxShadow: '0 0 10px #149144  ',
               '&:hover': {
-                bgcolor: '#b89558',
-                boxShadow: '0 0 15px #b89558',
+                bgcolor: '#1a8b45',
+                boxShadow: '0 0 15px #149144',
               },
             }}
             onClick={handleLinkClick}
