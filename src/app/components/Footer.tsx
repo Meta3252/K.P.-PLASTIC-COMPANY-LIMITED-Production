@@ -24,12 +24,12 @@ export default function Footer() {
 
         <div className="footer-section contact">
           <h3>Contact Us</h3>
-          <p>Email: marketing@besustain.co.th</p>
+          <p>Email: k.p.plastic.co.ltd@gmail.com</p>
           <p>Phone: 02-125-2019,093-328-7455</p>
-          <p>Address: 69/357 หมู่ 10 ต.บางเลน อ.บางใหญ่ จ.นนทบุรี 11140</p>
+          <p>Address: 13/13 หมู่ที่ 9 ตำบลนาดี อำเภอเมืองสมุทรสาคร จ.สมุทรสาคร 74000</p>
           <div className="social-icons">
             <a href="https://www.facebook.com/BeSustainconsult/" aria-label="Facebook" target="_blank" rel="noreferrer">
-              <svg width="24" height="24" fill="#6a533c" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 5 3.66 9.13 8.44 9.88v-6.99H7.9v-2.89h2.54V9.84c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.62.77-1.62 1.56v1.87h2.77l-.44 2.89h-2.33v6.99C18.34 21.13 22 17 22 12z" /></svg>
+              <svg width="24" height="24" fill="#1a8b45" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 5 3.66 9.13 8.44 9.88v-6.99H7.9v-2.89h2.54V9.84c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.62.77-1.62 1.56v1.87h2.77l-.44 2.89h-2.33v6.99C18.34 21.13 22 17 22 12z" /></svg>
             </a>
             <a href="https://page.line.me/214qwlfq?openQrModal=true" aria-label="Line" target="_blank" rel="noreferrer" style={{ display: 'inline-block' }}>
               <svg
@@ -39,7 +39,7 @@ export default function Footer() {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <rect x="2" y="2" width="20" height="20" rx="4" fill="#6a533c" />
+                <rect x="2" y="2" width="20" height="20" rx="4" fill="#1a8b45" />
                 <text
                   x="12"
                   y="17"
@@ -60,9 +60,9 @@ export default function Footer() {
 
       <style jsx>{`
         .footer {
-          background: #f7f3ee;
+          background: #f5fff5;
           padding: 40px 20px;
-          color: #6a533c;
+          color: #149144;
           font-family: 'Georgia', serif;
           box-shadow: 0 -5px 20px rgba(200, 180, 160, 0.1);
           user-select: none;
@@ -93,7 +93,7 @@ export default function Footer() {
           font-weight: 400;
           font-size: 1rem;
           line-height: 1.5;
-          color: #5a4730;
+          color: #000000;
         }
 
         .footer-section ul {
@@ -107,14 +107,14 @@ export default function Footer() {
         }
 
         .footer-section ul li a {
-          color: #6a533c;
+          color: #000000;
           text-decoration: none;
           font-weight: 500;
           transition: color 0.3s ease;
         }
 
         .footer-section ul li a:hover {
-          color: #a07f52;
+          color: #000000;
           text-decoration: underline;
         }
 
@@ -129,7 +129,7 @@ export default function Footer() {
         }
 
         .social-icons a:hover svg {
-          fill: #a07f52;
+          fill: #149144;
           cursor: pointer;
         }
 

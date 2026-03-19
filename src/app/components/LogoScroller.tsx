@@ -26,8 +26,8 @@ export default function LogoScroller() {
         .out-project-section {
           margin: 0 auto;
           padding: 40px 20px;
-          background: #fffaf5; /* โทนครีมนวลตา อบอุ่น */
-          box-shadow: 0 10px 30px rgba(200, 180, 160, 0.15);
+          background: #f5fff5; /* โทนครีมนวลตา อบอุ่น */
+          box-shadow: 0 10px 30px rgba(240, 248, 242, 0.95);
           user-select: none;
         }
 
@@ -35,7 +35,7 @@ export default function LogoScroller() {
           font-family: 'Georgia', serif;
           font-size: 2.8rem;
           font-weight: 600;
-          color: #6a533c; /* สีน้ำตาลเข้ม earth tone */
+          color: #149144; /* สีน้ำตาลเข้ม earth tone */
           text-align: center;
           margin-bottom: 32px;
           letter-spacing: 0.05em;
@@ -61,14 +61,14 @@ export default function LogoScroller() {
           width: 150px;
           height: auto;
           border-radius: 12px;
-          filter: drop-shadow(0 3px 5px rgba(150, 120, 90, 0.15));
+          filter: drop-shadow(0 3px 5px rgba(11, 173, 65, 0.9));
           transition: transform 0.35s ease, filter 0.35s ease;
           background: transparent !important;
         }
 
         .logo-image:hover {
           transform: scale(1.15);
-          filter: drop-shadow(0 6px 10px rgba(150, 120, 90, 0.3));
+          filter: drop-shadow(0 6px 10px rgba(11, 173, 124, 0.48));
           cursor: pointer;
         }
 
