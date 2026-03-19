@@ -123,8 +123,8 @@ export default function HeroSlider() {
                 <Link href={slide.link}>
                   <button className="
                      px-5 py-2 sm:px-6 sm:py-3
-                      bg-gradient-to-r from-emerald-700 via-green-600 to-emerald-500
-                        hover:from-emerald-600 hover:via-green-500 hover:to-emerald-400
+                      bg-gradient-to-r from-green-500 via-green-500 to-green-500
+                        hover:from-green-700 hover:via-green-700 hover:to-green-700
                         rounded-full text-white font-semibold
                         shadow-md hover:shadow-2xl
                         transform-gpu
