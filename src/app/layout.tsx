@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Besustain",
-  description: "Standard system consulting services",
+  title: "K.P. PLASTIC COMPANY LIMITED",
+  description: "Selling plastic pellets",
 };
 
 export default function RootLayout({
