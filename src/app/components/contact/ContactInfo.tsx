@@ -23,31 +23,31 @@ const ContactInfo: React.FC = () => {
 
       <div className="space-y-6">
         <div className="bg-white p-6 rounded-xl shadow-sm flex items-start space-x-4">
-          <FaMapMarkerAlt className="text-blue-600 text-xl mt-1" />
+          <FaMapMarkerAlt className="text-green-600 text-xl mt-1" />
           <div>
-            <p className="text-lg font-semibold">บริษัท บีซัสเทน จำกัด</p>
-            <p>69/357 หมู่ 10 ต.บางเลน อ.บางใหญ่ จ.นนทบุรี 11140</p>
+            <p className="text-lg font-semibold">บริษัท เค.พี.พลาสติก จำกัด</p>
+            <p>13/13 หมู่ที่ 9 ตำบลนาดี อำเภอเมืองสมุทรสาคร จ.สมุทรสาคร 74000</p>
           </div>
         </div>
 
         <div className="bg-white p-6 rounded-xl shadow-sm flex items-start space-x-4">
-          <FaPhoneAlt className="text-blue-600 text-xl mt-1" />
+          <FaPhoneAlt className="text-green-600 text-xl mt-1" />
           <div>
             <p className="text-lg font-semibold">โทรศัพท์</p>
-            <p>02-125-2019 , 093-328-7455</p>
+            <p>-</p>
           </div>
         </div>
 
         <div className="bg-white p-6 rounded-xl shadow-sm flex items-start space-x-4">
-          <FaEnvelope className="text-blue-600 text-xl mt-1" />
+          <FaEnvelope className="text-green-600 text-xl mt-1" />
           <div>
             <p className="text-lg font-semibold">E-mail</p>
-            <p>marketing@besustain.co.th</p>
+            <p>k.p.plastic.co.ltd@gmail.com</p>
           </div>
         </div>
 
         <div className="bg-white p-6 rounded-xl shadow-sm flex items-start space-x-4">
-          <div className="text-blue-600 text-xl mt-1">
+          <div className="text-green-600 text-xl mt-1">
             <FaFacebookF />
           </div>
           <div>
@@ -56,7 +56,7 @@ const ContactInfo: React.FC = () => {
               href="https://www.facebook.com/BeSustainconsult/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 hover:underline"
+              className="text-green-600 hover:underline"
             >
               Facebook Page
             </a>
@@ -75,7 +75,7 @@ const ContactInfo: React.FC = () => {
               rel="noopener noreferrer"
               className="text-green-600 hover:underline"
             >
-              @besustain
+              @K.P. PLASTIC COMPANY LIMITED
             </a>
           </div>
         </div>

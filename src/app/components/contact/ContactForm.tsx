@@ -110,8 +110,8 @@ const ContactForm: React.FC = () => {
             กรุณาติดต่อเราโดยตรงที่เบอร์
           </p>
           <p>
-            <span className="font-semibold text-blue-600">
-              02-125-2019,093-328-7455
+            <span className="font-semibold text-green-600">
+              -
             </span>
           </p>
         </div>
@@ -194,7 +194,7 @@ const ContactForm: React.FC = () => {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition duration-300 disabled:opacity-50"
+            className="w-full py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition duration-300 disabled:opacity-50"
           >
             {isSubmitting ? "กำลังส่งข้อมูล..." : "ส่งข้อมูล"}
           </button>

@@ -95,9 +95,9 @@ export default function ServicePage() {
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               whileFocus={{ scale: 1.03 }}
-              className="border border-yellow-400 rounded-md px-4 py-2 text-sm w-full sm:w-72 
-              focus:outline-none focus:ring-2 focus:ring-yellow-500 
-              bg-white text-[#a37d58] shadow-sm transition"
+              className="border border-green-400 rounded-md px-4 py-2 text-sm w-full sm:w-72 
+              focus:outline-none focus:ring-2 focus:ring-green-500 
+              bg-white text-[#149144] shadow-sm transition"
             />
           </motion.div>
 
