@@ -1,6 +1,6 @@
 export default function AboutCompany() {
   return (
-    <section className="relative bg-[#F9F5F0] py-20 px-6 md:px-24 text-gray-800 overflow-hidden">
+    <section className="relative bg-[#f5fff5] py-20 px-6 md:px-24 text-gray-800 overflow-hidden">
       {/* Background golden glow */}
       <div className="absolute top-10 left-1/2 w-[400px] h-[400px] bg-gradient-radial from-green-100/30 to-transparent rounded-full -translate-x-1/2 -translate-y-1/2 pointer-events-none blur-2xl"></div>
 

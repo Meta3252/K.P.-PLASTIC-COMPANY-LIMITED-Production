@@ -25,7 +25,7 @@ export default function Footer() {
         <div className="footer-section contact">
           <h3>Contact Us</h3>
           <p>Email: k.p.plastic.co.ltd@gmail.com</p>
-          <p>Phone: 02-125-2019,093-328-7455</p>
+          <p>Phone: -</p>
           <p>Address: 13/13 หมู่ที่ 9 ตำบลนาดี อำเภอเมืองสมุทรสาคร จ.สมุทรสาคร 74000</p>
           <div className="social-icons">
             <a href="https://www.facebook.com/BeSustainconsult/" aria-label="Facebook" target="_blank" rel="noreferrer">

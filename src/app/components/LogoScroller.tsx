@@ -61,7 +61,7 @@ export default function LogoScroller() {
           width: 150px;
           height: auto;
           border-radius: 12px;
-          filter: drop-shadow(0 3px 5px rgba(11, 173, 65, 0.9));
+          filter: drop-shadow(0 3px 5px rgba(11, 173, 65, 0.32));
           transition: transform 0.35s ease, filter 0.35s ease;
           background: transparent !important;
         }
