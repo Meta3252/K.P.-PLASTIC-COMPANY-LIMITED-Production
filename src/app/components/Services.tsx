@@ -1,35 +1,40 @@
 export default function Services() {
   const services = [
     {
-      image: '/services/food-safety.png',
-      title: 'Food Safety Standards System',
-      description: 'มาตรฐานความปลอดภัยด้านอาหาร เพื่อรับรองความปลอดภัยในการผลิตและจัดการอาหารตามระบบสากล',
+      image: '/services/High-qualityplastic.jpg',
+      title: 'จำหน่ายเม็ดพลาสติกคุณภาพ',
+      description: 'จัดจำหน่ายเม็ดพลาสติกหลากหลายประเภท รองรับงานอุตสาหกรรม เช่น บรรจุภัณฑ์ ชิ้นส่วน และงานขึ้นรูป พร้อมมาตรฐานที่เชื่อถือได้',
       link: '/services',
     },
     {
-      image: '/services/iso.png',
-      title: 'International Organization For Standardization',
-      description: 'ให้คำปรึกษาในการขอและรักษาระบบ ISO สำหรับองค์กรที่ต้องการมาตรฐานระดับสากล',
+      image: '/services/Supply_plastic_pellets.jpg',
+      title: 'จัดหาวัตถุดิบตามความต้องการ',
+      description: 'สามารถจัดหาเม็ดพลาสติกตามสเปคที่ลูกค้าต้องการ เพื่อให้เหมาะกับกระบวนการผลิตเฉพาะทาง',
+      link: '/services',
     },
     {
-      image: '/services/social.png',
-      title: 'International Standards For Social Responsibility',
-      description: 'มาตรฐานด้านความรับผิดชอบต่อสังคม เพื่อสร้างความเชื่อมั่นและภาพลักษณ์ที่ดีให้กับองค์กร',
+      image: '/services/Fast_delivery_service.jpg',
+      title: 'บริการจัดส่งรวดเร็ว',
+      description: 'มีระบบจัดส่งที่มีประสิทธิภาพ พร้อมรองรับออเดอร์เร่งด่วน ช่วยลดระยะเวลาและความเสี่ยงในการหยุดสายการผลิต',
+      link: '/services',
     },
     {
-      image: '/services/softskills.jpg',
-      title: 'Soft Skills',
-      description: 'ฝึกอบรมด้านทักษะการสื่อสาร การทำงานเป็นทีม ความเป็นผู้นำ และการคิดเชิงกลยุทธ์',
+      image: '/services/Consulting.jpg',
+      title: 'ให้คำปรึกษาด้านวัสดุ',
+      description: 'ทีมงานพร้อมให้คำแนะนำเกี่ยวกับการเลือกใช้เม็ดพลาสติกที่เหมาะสม เพื่อเพิ่มประสิทธิภาพและลดต้นทุนในการผลิต',
+      link: '/services',
     },
     {
-      image: '/services/law.jpg',
-      title: 'Legal Services Related To Intellectual Property',
-      description: 'บริการให้คำปรึกษาด้านกฎหมายที่เกี่ยวข้องกับทรัพย์สินทางปัญญา เช่น ลิขสิทธิ์ สิทธิบัตร และเครื่องหมายการค้า',
+      image: '/services/Orders_of_all_sizes.jpg',
+      title: 'รองรับออเดอร์ทุกขนาด',
+      description: 'ไม่ว่าจะเป็นโรงงานขนาดเล็กหรือขนาดใหญ่ เราพร้อมให้บริการอย่างยืดหยุ่นและเป็นมืออาชีพ',
+      link: '/services',
     },
     {
-      image: '/services/factory-license.png',
-      title: 'Request a Factory License',
-      description: 'บริการคำแนะนำและดำเนินการขอใบอนุญาตประกอบกิจการโรงงาน เพื่อให้สอดคล้องกับกฎหมายไทย',
+      image: '/services/Quality_control.jpg',
+      title: 'ควบคุมคุณภาพสินค้า',
+      description: 'มีการตรวจสอบคุณภาพก่อนส่งมอบ เพื่อให้ลูกค้ามั่นใจในมาตรฐานของสินค้า',
+      link: '/services',
     },
   ];
 
@@ -51,7 +56,7 @@ export default function Services() {
           บริการของเรา
         </h2>
         <p className="mt-4 text-lg text-gray-700 max-w-xl mx-auto font-light">
-          ครอบคลุมทั้งมาตรฐาน ความปลอดภัย กฎหมาย และพัฒนาศักยภาพของบุคลากร
+          เรามุ่งมั่นจัดจำหน่ายเม็ดพลาสติกคุณภาพ พร้อมบริการที่ตอบโจทย์ทุกความต้องการของภาคอุตสาหกรรม
         </p>
       </div>
 
@@ -78,7 +83,7 @@ export default function Services() {
                 <p className="text-sm text-gray-200">{description}</p>
                 <a
                   href={link || '#'}
-                  className="inline-block mt-2 px-4 py-2 bg-white text-black text-sm rounded-lg hover:bg-yellow-400 transition-colors duration-300"
+                  className="inline-block mt-2 px-4 py-2 bg-white text-black text-sm rounded-lg hover:bg-green-400 transition-colors duration-300"
                 >
                   ดูรายละเอียด
                 </a>
