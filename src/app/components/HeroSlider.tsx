@@ -105,7 +105,7 @@ export default function HeroSlider() {
               backgroundPosition: 'center',
             }}
           >
-            <div className="w-full h-full bg-black/50 flex flex-col items-center justify-center text-white p-4 sm:p-6 md:p-8">
+             <div className="w-full h-full bg-black/50 flex flex-col items-center justify-center text-white p-4 sm:p-6 md:p-8 rounded-2xl">
               <motion.div
                 initial={{ opacity: 0, y: 40 }}
                 animate={activeIndex === index ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
