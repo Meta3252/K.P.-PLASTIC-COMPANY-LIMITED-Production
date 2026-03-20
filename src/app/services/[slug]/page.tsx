@@ -28,7 +28,7 @@ export default async function ServiceDetail({ params }: Props) {
         <main>
             <Breadcrumb/>
             <div className="max-w-4xl mx-auto px-4 py-12">
-            <h1 className="text-4xl font-bold mb-6 text-[#a37d58]">{service.title}</h1>
+            <h1 className="text-4xl font-bold mb-6 text-[#149144]">{service.title}</h1>
             <Image
                 src={service.image}
                 alt={service.title}
@@ -40,7 +40,7 @@ export default async function ServiceDetail({ params }: Props) {
                 {service.description}
             </p>
             <section
-                className="prose prose-lg prose-h2:text-[#a37d58] prose-li:marker:text-[#d6b760] max-w-none"
+                className="prose prose-lg prose-h2:text-[#149144] prose-li:marker:text-[#d6b760] max-w-none"
                 dangerouslySetInnerHTML={{ __html: service.content ?? '' }}
             />
             </div>

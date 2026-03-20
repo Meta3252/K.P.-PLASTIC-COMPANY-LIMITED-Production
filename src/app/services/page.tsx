@@ -30,7 +30,7 @@ const fadeUp: Variants = {
 };
 
 export default function ServicePage() {
-  const [selectedCategory, setSelectedCategory] = useState('Food Safety Standards System');
+  const [selectedCategory, setSelectedCategory] = useState('จำหน่ายเม็ดพลาสติกคุณภาพ');
   const [searchTerm, setSearchTerm] = useState('');
 
   const filteredServices = services.filter(
@@ -62,10 +62,10 @@ export default function ServicePage() {
           className="relative max-w-7xl mx-auto px-6 py-24 z-10 text-center"
         >
           <h1 className="text-4xl font-bold text-white tracking-tight">
-            บริการของเรา
+            บริการ K.P. PLASTIC
           </h1>
           <p className="text-lg text-white mt-4">
-            ครอบคลุมทั้งมาตรฐาน ความปลอดภัย กฎหมาย และพัฒนาศักยภาพของบุคลากร
+            รองรับความต้องการของลูกค้าด้วยบริการที่หลากหลายและครอบคลุมทุกด้านของอุตสาหกรรมพลาสติก
           </p>
         </motion.div>
       </motion.section>
