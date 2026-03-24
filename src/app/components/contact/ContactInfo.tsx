@@ -53,7 +53,7 @@ const ContactInfo: React.FC = () => {
           <div>
             <p className="text-lg font-semibold">Facebook</p>
             <a
-              href="https://www.facebook.com/BeSustainconsult/"
+              href="https://www.facebook.com/people/%E0%B9%80%E0%B8%84%E0%B8%9E%E0%B8%B5%E0%B8%9E%E0%B8%A5%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%B4%E0%B8%81-%E0%B8%88%E0%B8%B3%E0%B8%81%E0%B8%B1%E0%B8%94/61577548353934/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-green-600 hover:underline"

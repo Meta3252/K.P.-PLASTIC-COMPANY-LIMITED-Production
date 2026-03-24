@@ -28,7 +28,7 @@ export default function Footer() {
           <p>Phone: -</p>
           <p>Address: 13/13 หมู่ที่ 9 ตำบลนาดี อำเภอเมืองสมุทรสาคร จ.สมุทรสาคร 74000</p>
           <div className="social-icons">
-            <a href="https://www.facebook.com/BeSustainconsult/" aria-label="Facebook" target="_blank" rel="noreferrer">
+            <a href="https://www.facebook.com/people/%E0%B9%80%E0%B8%84%E0%B8%9E%E0%B8%B5%E0%B8%9E%E0%B8%A5%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%B4%E0%B8%81-%E0%B8%88%E0%B8%B3%E0%B8%81%E0%B8%B1%E0%B8%94/61577548353934/" aria-label="Facebook" target="_blank" rel="noreferrer">
               <svg width="24" height="24" fill="#1a8b45" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 5 3.66 9.13 8.44 9.88v-6.99H7.9v-2.89h2.54V9.84c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.62.77-1.62 1.56v1.87h2.77l-.44 2.89h-2.33v6.99C18.34 21.13 22 17 22 12z" /></svg>
             </a>
             <a href="https://page.line.me/214qwlfq?openQrModal=true" aria-label="Line" target="_blank" rel="noreferrer" style={{ display: 'inline-block' }}>
