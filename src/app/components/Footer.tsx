@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="footer-section about">
           <h3>About Us</h3>
           <p>
-            เราคือองค์กรที่ให้คำปรึกษาด้านระบบคุณภาพที่มีประสบการณ์ตรวจประเมินเพื่อให้การรับรองระบบคุณภาพมากกว่า 800 บริษัท ด้วยผลงานที่ผ่านมาทำให้องค์กรของคุณได้รับคำปรึกษาและการรับรองมาตรฐานสากลจากทีมผู้เชี่ยวชาญตัวจริง
+            บริษัท เค.พี. พลาสติก จำกัด <br/> (K.P. PLASTIC COMPANY LIMITED) เป็นผู้จัดจำหน่ายเม็ดพลาสติกสำหรับอุตสาหกรรมการผลิต โดยมุ่งเน้นคุณภาพของวัตถุดิบ ความคุ้มค่า และความเหมาะสมในการใช้งานของลูกค้าในแต่ละประเภทอุตสาหกรรม เราพร้อมสนับสนุนธุรกิจของลูกค้าให้ดำเนินการผลิตได้อย่างมีประสิทธิภาพ ลดต้นทุน และเพิ่มศักยภาพการแข่งขันในตลาด
           </p>
         </div>
 
@@ -31,7 +31,7 @@ export default function Footer() {
             <a href="https://www.facebook.com/people/%E0%B9%80%E0%B8%84%E0%B8%9E%E0%B8%B5%E0%B8%9E%E0%B8%A5%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%B4%E0%B8%81-%E0%B8%88%E0%B8%B3%E0%B8%81%E0%B8%B1%E0%B8%94/61577548353934/" aria-label="Facebook" target="_blank" rel="noreferrer">
               <svg width="24" height="24" fill="#1a8b45" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 5 3.66 9.13 8.44 9.88v-6.99H7.9v-2.89h2.54V9.84c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.62.77-1.62 1.56v1.87h2.77l-.44 2.89h-2.33v6.99C18.34 21.13 22 17 22 12z" /></svg>
             </a>
-            <a href="https://page.line.me/214qwlfq?openQrModal=true" aria-label="Line" target="_blank" rel="noreferrer" style={{ display: 'inline-block' }}>
+            {/* <a href="https://page.line.me/214qwlfq?openQrModal=true" aria-label="Line" target="_blank" rel="noreferrer" style={{ display: 'inline-block' }}>
               <svg
                 width="24"
                 height="24"
@@ -52,7 +52,7 @@ export default function Footer() {
                   L
                 </text>
               </svg>
-            </a>
+            </a> */}
 
           </div>
         </div>

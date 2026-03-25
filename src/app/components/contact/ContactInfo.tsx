@@ -63,7 +63,7 @@ const ContactInfo: React.FC = () => {
           </div>
         </div>
 
-        <div className="bg-white p-6 rounded-xl shadow-sm flex items-start space-x-4">
+        {/* <div className="bg-white p-6 rounded-xl shadow-sm flex items-start space-x-4">
           <div className="text-green-600 text-xl mt-1">
             <FaLine />
           </div>
@@ -78,7 +78,7 @@ const ContactInfo: React.FC = () => {
               @K.P. PLASTIC COMPANY LIMITED
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
