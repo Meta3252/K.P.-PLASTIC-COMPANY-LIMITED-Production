@@ -5,14 +5,13 @@ export default function AboutCompany() {
       <div className="absolute top-10 left-1/2 w-[400px] h-[400px] bg-gradient-radial from-green-100/30 to-transparent rounded-full -translate-x-1/2 -translate-y-1/2 pointer-events-none blur-2xl"></div>
 
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-20 relative z-10">
-
         {/* Image */}
         <div className="relative w-full md:w-1/2 rounded-xl overflow-hidden shadow-xl border border-green-100 flex items-center justify-center">
           <img
             src="/Hero_1.jpg"
             alt="K.P. Plastic Company"
             className="object-cover w-full max-h-[480px] md:max-h-full rounded-xl"
-            style={{ aspectRatio: '3 / 4' }}
+            style={{ aspectRatio: "3 / 4" }}
           />
         </div>
 
@@ -26,28 +25,32 @@ export default function AboutCompany() {
             </h2>
 
             <p className="text-base leading-relaxed text-gray-700 font-light text-justify pr-4 pb-6">
-              บริษัท เค.พี. พลาสติก จำกัด (K.P. PLASTIC COMPANY LIMITED) เป็นผู้จัดจำหน่ายเม็ดพลาสติกสำหรับอุตสาหกรรมการผลิต
-              โดยมุ่งเน้นคุณภาพของวัตถุดิบ ความคุ้มค่า และความเหมาะสมในการใช้งานของลูกค้าในแต่ละประเภทอุตสาหกรรม
-              เราพร้อมสนับสนุนธุรกิจของลูกค้าให้ดำเนินการผลิตได้อย่างมีประสิทธิภาพ ลดต้นทุน และเพิ่มศักยภาพการแข่งขันในตลาด
+              บริษัท เค.พี.พลาสติก จำกัด (K.P. PLASTIC COMPANY LIMITED)
+              ดำเนินธุรกิจด้านการรีไซเคิลพลาสติก โดยมุ่งเน้นการแปรรูปพลาสติกใช้แล้ว
+              ให้กลับมาเป็นเม็ดพลาสติกคุณภาพ เพื่อรองรับการนำไปใช้ในกระบวนการผลิต
+              ได้อย่างเหมาะสม คุ้มค่า และสอดคล้องกับความต้องการของลูกค้าในภาคอุตสาหกรรม
             </p>
 
             {/* Subtopics */}
             <div className="space-y-10">
               {[
                 {
-                  title: 'Why Choose Us?',
-                  text: 'เรามีประสบการณ์ในการจัดหาและคัดสรรเม็ดพลาสติกคุณภาพจากแหล่งที่เชื่อถือได้ พร้อมให้คำแนะนำในการเลือกใช้วัสดุให้เหมาะสมกับงานของลูกค้า เพื่อให้ได้ผลลัพธ์ที่ดีที่สุดในกระบวนการผลิต',
+                  title: "ทำไมลูกค้าจึงเลือกเรา",
+                  text: "เรามุ่งเน้นการคัดสรรวัตถุดิบ ควบคุมคุณภาพในทุกขั้นตอน และให้ความสำคัญกับการส่งมอบสินค้าที่สม่ำเสมอ เพื่อให้ลูกค้านำไปใช้งานต่อได้อย่างมั่นใจ",
                 },
                 {
-                  title: 'สินค้าและบริการของเรา',
-                  text: 'เราจัดจำหน่ายเม็ดพลาสติกหลากหลายประเภท รองรับอุตสาหกรรมการผลิตที่แตกต่างกัน พร้อมบริการให้คำปรึกษา เพื่อช่วยลดปัญหาในกระบวนการผลิตและเพิ่มประสิทธิภาพในการใช้งาน',
+                  title: "สินค้าและบริการของเรา",
+                  text: "เราจัดจำหน่ายเม็ดพลาสติกรีไซเคิลสำหรับงานอุตสาหกรรม พร้อมให้คำแนะนำในการเลือกใช้วัสดุให้เหมาะสมกับลักษณะงาน เพื่อช่วยเพิ่มประสิทธิภาพในการผลิตและลดต้นทุนที่ไม่จำเป็น",
                 },
                 {
-                  title: 'ความมุ่งมั่นของเรา',
-                  text: 'เรามุ่งมั่นในการเป็นพันธมิตรทางธุรกิจที่ลูกค้าไว้วางใจ ด้วยการให้บริการที่รวดเร็ว ตรงเวลา และใส่ใจในทุกรายละเอียด เพื่อสร้างความสัมพันธ์ระยะยาวและเติบโตไปพร้อมกัน',
+                  title: "ความมุ่งมั่นของเรา",
+                  text: "เรามุ่งมั่นเป็นพันธมิตรทางธุรกิจที่ลูกค้าไว้วางใจ ด้วยการบริการที่รวดเร็ว ตรงเวลา และใส่ใจในทุกรายละเอียด ควบคู่ไปกับการสนับสนุนการใช้ทรัพยากรอย่างคุ้มค่าและเป็นมิตรต่อสิ่งแวดล้อม",
                 },
               ].map(({ title, text }, i) => (
-                <div key={i} className="relative pl-6 border-l-2 border-green-400">
+                <div
+                  key={i}
+                  className="relative pl-6 border-l-2 border-green-400"
+                >
                   <div className="absolute -left-[9px] top-[6px] w-4 h-4 bg-green-400 border-2 border-white rounded-full shadow-md"></div>
                   <h3 className="text-xl font-semibold mb-2 text-gray-800 tracking-wide">
                     {title}
@@ -69,7 +72,6 @@ export default function AboutCompany() {
                 <span className="relative z-10">ดูสินค้าและบริการ</span>
               </a>
             </div>
-
           </div>
         </div>
       </div>

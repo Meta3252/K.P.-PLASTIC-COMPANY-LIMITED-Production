@@ -29,7 +29,6 @@ const fadeUp: Variants = {
 export default function AboutUs() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-emerald-50 via-white to-white text-gray-800 px-6 py-20 relative overflow-hidden">
-
       {/* Background Glow */}
       <div className="absolute -top-32 -left-32 w-[400px] h-[400px] bg-emerald-300/30 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-green-200/30 rounded-full blur-3xl"></div>
@@ -43,7 +42,6 @@ export default function AboutUs() {
         animate="show"
         className="max-w-6xl mx-auto space-y-24 relative z-10"
       >
-
         {/* Header */}
         <motion.section variants={fadeUp} className="text-center space-y-5">
           <span className="inline-flex items-center rounded-full bg-emerald-100 px-4 py-1 text-sm font-medium text-emerald-700 shadow-sm">
@@ -57,21 +55,22 @@ export default function AboutUs() {
           <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-green-400 mx-auto rounded-full"></div>
 
           <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            K.P. PLASTIC COMPANY LIMITED คือผู้จัดจำหน่ายเม็ดพลาสติกคุณภาพ
-            ที่มุ่งเน้นการส่งมอบวัตถุดิบที่ได้มาตรฐาน เพื่อสนับสนุนกระบวนการผลิตของลูกค้าอย่างมีประสิทธิภาพ
+            K.P. PLASTIC COMPANY LIMITED ดำเนินธุรกิจด้านการรีไซเคิลพลาสติก
+            โดยมุ่งเน้นการแปรรูปพลาสติกใช้แล้วให้กลับมาเป็นเม็ดพลาสติกคุณภาพ
+            เพื่อรองรับการนำไปใช้ในกระบวนการผลิตได้อย่างเหมาะสม
           </p>
         </motion.section>
 
-        {/* Stats */}
+        {/* Quick Highlights */}
         <motion.section
           variants={fadeUp}
           className="grid grid-cols-2 md:grid-cols-4 gap-6"
         >
           {[
-            { label: "ลูกค้า", value: "100+" },
-            { label: "ประสบการณ์", value: "10+ ปี" },
-            { label: "สินค้า", value: "50+" },
-            { label: "ความพึงพอใจ", value: "99%" },
+            { label: "ก่อตั้ง", value: "2557" },
+            { label: "ธุรกิจหลัก", value: "รีไซเคิล" },
+            { label: "จุดเด่น", value: "คุณภาพ" },
+            { label: "แนวทาง", value: "ยั่งยืน" },
           ].map((item) => (
             <motion.div
               key={item.label}
@@ -81,9 +80,7 @@ export default function AboutUs() {
               <p className="text-3xl font-bold text-emerald-600">
                 {item.value}
               </p>
-              <p className="text-gray-600 text-sm mt-1">
-                {item.label}
-              </p>
+              <p className="text-gray-600 text-sm mt-1">{item.label}</p>
             </motion.div>
           ))}
         </motion.section>
@@ -96,28 +93,40 @@ export default function AboutUs() {
           <div className="overflow-hidden rounded-3xl shadow-2xl group">
             <img
               src="/images/about/1.jpg"
+              alt="About K.P. Plastic Company Limited"
               className="w-full h-full object-cover transition duration-700 ease-out group-hover:scale-105"
             />
           </div>
 
           <div className="space-y-5">
-            <h2 className="text-2xl font-semibold text-gray-900">
-              บริษัท เค.พี.พลาสติก จำกัด
-            </h2>
+            <div className="space-y-5">
+              <p className="text-gray-600 leading-relaxed">
+                บริษัท เค.พี.พลาสติก จำกัด ก่อตั้งขึ้นเมื่อวันที่ 26 กุมภาพันธ์
+                พ.ศ. 2557 และดำเนินธุรกิจด้านการรีไซเคิลพลาสติกอย่างต่อเนื่อง
+                โดยให้ความสำคัญกับการคัดสรรวัตถุดิบ การควบคุมคุณภาพ และการพัฒนา
+                กระบวนการผลิต เพื่อให้ได้เม็ดพลาสติกรีไซเคิลที่สามารถนำไปใช้งานต่อ
+                ได้อย่างมีประสิทธิภาพ
+              </p>
 
-            <p className="text-gray-600 leading-relaxed">
-              เราเป็นผู้จำหน่ายเม็ดพลาสติกสำหรับอุตสาหกรรมการผลิต โดยเน้นคุณภาพ ความตรงเวลา และความเหมาะสมในการใช้งาน
-            </p>
+              <p className="text-gray-600 leading-relaxed">
+                เรามุ่งมั่นในการผลิตและพัฒนาสินค้าให้สอดคล้องกับความต้องการของลูกค้า
+                ในภาคอุตสาหกรรม พร้อมให้ความสำคัญกับความสม่ำเสมอของคุณภาพ ความคุ้มค่า
+                และการส่งมอบงานตามกำหนด
+              </p>
 
-            <p className="text-gray-600 leading-relaxed">
-              เราพร้อมให้คำแนะนำเพื่อช่วยลดต้นทุน เพิ่มประสิทธิภาพ และสร้างความมั่นใจในทุกกระบวนการผลิต
-            </p>
+              <p className="text-gray-600 leading-relaxed">
+                นอกจากการดำเนินธุรกิจแล้ว บริษัทฯ ยังให้ความสำคัญกับการใช้ทรัพยากร
+                อย่างคุ้มค่า การลดปริมาณขยะพลาสติก และการสนับสนุนแนวทางการผลิตที่
+                เป็นมิตรต่อสิ่งแวดล้อม เพื่อสร้างสมดุลระหว่างการเติบโตทางธุรกิจและ
+                ความรับผิดชอบต่อสังคม
+              </p>
+            </div>
 
             <div className="grid grid-cols-2 gap-4 pt-3">
               {[
                 "เม็ดพลาสติกคุณภาพ",
-                "ส่งไว ตรงเวลา",
-                "ที่ปรึกษามืออาชีพ",
+                "ส่งมอบตรงเวลา",
+                "ควบคุมคุณภาพ",
                 "รองรับอุตสาหกรรม",
               ].map((item) => (
                 <motion.div
@@ -145,11 +154,12 @@ export default function AboutUs() {
             </h2>
 
             <p className="text-gray-600 max-w-2xl mx-auto">
-              เราให้ความสำคัญทั้งคุณภาพสินค้า ความรวดเร็ว และความเข้าใจในธุรกิจของลูกค้า
+              เราให้ความสำคัญกับคุณภาพของวัตถุดิบ ความสม่ำเสมอของสินค้า และการให้บริการ
+              ที่เข้าใจความต้องการของลูกค้าในแต่ละอุตสาหกรรม
             </p>
 
             <div className="grid md:grid-cols-3 gap-4 pt-4">
-              {["คุณภาพสูง", "จัดส่งตรงเวลา", "บริการมืออาชีพ"].map((item) => (
+              {["คัดสรรวัตถุดิบ", "ควบคุมคุณภาพ", "ส่งมอบตรงเวลา"].map((item) => (
                 <div
                   key={item}
                   className="bg-white rounded-xl py-3 shadow text-emerald-700 text-sm"
@@ -171,9 +181,18 @@ export default function AboutUs() {
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { title: "คุณภาพ", description: "คัดสรรสินค้ามาตรฐานสูง" },
-              { title: "ความรวดเร็ว", description: "บริการรวดเร็ว ตรงเวลา" },
-              { title: "ความยั่งยืน", description: "สร้างความสัมพันธ์ระยะยาว" },
+              {
+                title: "คุณภาพ",
+                description: "คัดสรรและพัฒนาสินค้าให้ได้มาตรฐานอย่างต่อเนื่อง",
+              },
+              {
+                title: "ความรับผิดชอบ",
+                description: "ดำเนินธุรกิจอย่างมีจรรยาบรรณ และใส่ใจสิ่งแวดล้อม",
+              },
+              {
+                title: "การพัฒนา",
+                description: "ปรับปรุงกระบวนการผลิตให้ตอบโจทย์ลูกค้าได้ดียิ่งขึ้น",
+              },
             ].map((item) => (
               <motion.div
                 key={item.title}
@@ -184,29 +203,30 @@ export default function AboutUs() {
                 <h3 className="text-lg font-semibold text-emerald-700 mb-2">
                   {item.title}
                 </h3>
-                <p className="text-gray-600">
-                  {item.description}
-                </p>
+                <p className="text-gray-600">{item.description}</p>
               </motion.div>
             ))}
           </div>
         </motion.section>
 
         {/* CTA */}
-        <motion.section variants={fadeUp} className="text-center space-y-6 relative">
+        <motion.section
+          variants={fadeUp}
+          className="text-center space-y-6 relative"
+        >
           <h2 className="text-2xl font-semibold text-gray-900">
             มาร่วมเป็นส่วนหนึ่งกับเรา
           </h2>
 
           <p className="text-gray-600 max-w-xl mx-auto">
-            พร้อมให้บริการและเติบโตไปกับธุรกิจของคุณ
+            พร้อมให้บริการและเติบโตไปกับธุรกิจของคุณ ด้วยสินค้าที่คุ้มค่าและเหมาะสมกับการใช้งาน
           </p>
 
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center px-8 py-3 rounded-full 
-            bg-gradient-to-r from-emerald-600 to-green-500 
-            text-white font-medium shadow-lg 
+            className="inline-flex items-center justify-center px-8 py-3 rounded-full
+            bg-gradient-to-r from-emerald-600 to-green-500
+            text-white font-medium shadow-lg
             transition-all duration-500 ease-out
             hover:scale-105 hover:shadow-2xl active:scale-95"
           >
@@ -216,7 +236,6 @@ export default function AboutUs() {
           {/* Glow */}
           <div className="absolute left-1/2 -translate-x-1/2 mt-6 w-40 h-10 bg-emerald-400/30 blur-2xl rounded-full"></div>
         </motion.section>
-
       </motion.div>
     </div>
   );
