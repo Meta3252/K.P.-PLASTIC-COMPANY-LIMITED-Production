@@ -34,7 +34,7 @@ const ContactInfo: React.FC = () => {
           <FaPhoneAlt className="text-green-600 text-xl mt-1" />
           <div>
             <p className="text-lg font-semibold">โทรศัพท์</p>
-            <p>-</p>
+            <p>034-446748</p>
           </div>
         </div>
 

@@ -113,47 +113,74 @@ export default function Services() {
           <motion.div
             key={i}
             variants={fadeUp}
-            whileHover={{ y: -10, scale: 1.03 }}
-            transition={{ type: "spring", stiffness: 200 }}
-            className="relative h-80 rounded-2xl overflow-hidden group shadow-lg"
+            whileHover={{ y: -12, scale: 1.04 }}
+            transition={{ type: "spring", stiffness: 180, damping: 12 }}
+            className="relative h-80 rounded-3xl overflow-hidden group 
+                 bg-white/5 backdrop-blur-xl 
+                 shadow-[0_10px_40px_rgba(0,0,0,0.25)]"
           >
             {/* Image */}
             <img
               src={item.image}
-              className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+              className="w-full h-full object-cover 
+                   group-hover:scale-110 
+                   transition duration-700 ease-out"
             />
 
-            {/* Overlay เขียว */}
-            <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/80 via-emerald-800/50 to-transparent group-hover:from-emerald-900/90 transition"></div>
+            {/* Gradient overlay */}
+            <div className="absolute inset-0 
+        bg-gradient-to-t 
+        from-black/70 via-black/20 to-transparent 
+        opacity-80 group-hover:opacity-90 transition"
+            />
+
+            {/* Glow effect */}
+            <div className="absolute -inset-1 rounded-3xl 
+        bg-gradient-to-r from-emerald-400/20 via-transparent to-emerald-400/20 
+        blur-xl opacity-0 group-hover:opacity-100 transition duration-500"
+            />
 
             {/* Content */}
             <div className="absolute bottom-0 p-6 text-white z-10">
-              <h3 className="text-xl font-semibold mb-2">
+              <h3 className="text-xl font-semibold mb-2 tracking-wide">
                 {item.title}
               </h3>
-              <p className="text-sm text-emerald-100">
+              <p className="text-sm text-gray-200 leading-relaxed">
                 {item.description}
               </p>
             </div>
 
             {/* Hover Layer */}
-            <div className="absolute inset-0 flex items-center justify-center bg-emerald-900/90 text-white p-6 opacity-0 group-hover:opacity-100 transition duration-500 z-20 backdrop-blur-md">
+            <div className="absolute inset-0 flex items-center justify-center 
+        bg-black/70 backdrop-blur-lg 
+        text-white p-6 opacity-0 
+        group-hover:opacity-100 
+        transition duration-500 z-20"
+            >
               <div className="text-center space-y-4">
-                <p className="text-sm text-emerald-100">
+                <p className="text-sm text-gray-200 leading-relaxed">
                   {item.description}
                 </p>
 
                 <Link
                   href="/services"
-                  className="inline-block px-5 py-2 bg-white text-emerald-700 text-sm rounded-full font-medium hover:bg-emerald-100 transition"
+                  className="inline-block px-6 py-2.5 
+                       bg-emerald-400 text-black 
+                       text-sm rounded-full font-semibold 
+                       hover:bg-emerald-300 
+                       transition shadow-md"
                 >
                   ดูรายละเอียด
                 </Link>
               </div>
             </div>
 
-            {/* Border Glow */}
-            <div className="absolute inset-0 rounded-2xl border border-white/10 group-hover:border-emerald-300/50 transition"></div>
+            {/* Border */}
+            <div className="absolute inset-0 rounded-3xl 
+        border border-white/10 
+        group-hover:border-emerald-400/40 
+        transition duration-300"
+            />
           </motion.div>
         ))}
       </motion.div>

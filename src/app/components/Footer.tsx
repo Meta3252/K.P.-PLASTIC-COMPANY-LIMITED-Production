@@ -25,7 +25,7 @@ export default function Footer() {
         <div className="footer-section contact">
           <h3>Contact Us</h3>
           <p>Email: k.p.plastic.co.ltd@gmail.com</p>
-          <p>Phone: -</p>
+          <p>Phone: 034-446748</p>
           <p>Address: 13/13 หมู่ที่ 9 ตำบลนาดี อำเภอเมืองสมุทรสาคร จ.สมุทรสาคร 74000</p>
           <div className="social-icons">
             <a href="https://www.facebook.com/people/%E0%B9%80%E0%B8%84%E0%B8%9E%E0%B8%B5%E0%B8%9E%E0%B8%A5%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%B4%E0%B8%81-%E0%B8%88%E0%B8%B3%E0%B8%81%E0%B8%B1%E0%B8%94/61577548353934/" aria-label="Facebook" target="_blank" rel="noreferrer">
