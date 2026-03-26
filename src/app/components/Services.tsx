@@ -27,35 +27,35 @@ const fadeUp: Variants = {
 export default function Services() {
   const services = [
     {
-      image: "/services/High-qualityplastic.jpg",
-      title: "จำหน่ายเม็ดพลาสติกคุณภาพ",
+      image: "/services/ABS_A-95005.png",
+      title: "ABS / A-95005",
       description:
-        "จัดจำหน่ายเม็ดพลาสติกหลากหลายประเภท รองรับงานอุตสาหกรรม",
+        "",
     },
     {
-      image: "/services/Supply_plastic_pellets.jpg",
-      title: "จัดหาวัตถุดิบตามความต้องการ",
-      description: "สามารถจัดหาเม็ดพลาสติกตามสเปคเฉพาะทาง",
+      image: "/services/ABS_A-95008.png",
+      title: "ABS / A-95008",
+      description: "",
     },
     {
-      image: "/services/Fast_delivery_service.jpg",
-      title: "บริการจัดส่งรวดเร็ว",
-      description: "รองรับออเดอร์เร่งด่วน ลด downtime การผลิต",
+      image: "/services/ABS_A-Gray.png",
+      title: "ABS / A-Gray",
+      description: "",
     },
     {
-      image: "/services/Consulting.jpg",
-      title: "ให้คำปรึกษาด้านวัสดุ",
-      description: "ช่วยเลือกวัสดุให้เหมาะ ลดต้นทุน",
+      image: "/services/ABS_A-200.png",
+      title: "ABS / A-200",
+      description: "",
     },
     {
-      image: "/services/Orders_of_all_sizes.jpg",
-      title: "รองรับออเดอร์ทุกขนาด",
-      description: "ยืดหยุ่นทั้งโรงงานเล็กและใหญ่",
+      image: "/services/ABS_A-001.png",
+      title: "ABS / A-001",
+      description: "",
     },
     {
-      image: "/services/Quality_control.jpg",
-      title: "ควบคุมคุณภาพสินค้า",
-      description: "ตรวจสอบก่อนส่งมอบทุกครั้ง",
+      image: "/services/GPPS-004-2.png",
+      title: "GPPS / 004-2",
+      description: "",
     },
   ];
 
