@@ -14,26 +14,26 @@ export default function HeroSlider() {
   const slides = [
     {
       image: '/Hero_1.jpg',
-      title: 'ให้คำปรึกษาโดยผู้เชี่ยวชาญ',
-      subtitle: 'คัดสรรวัตถุดิบพลาสติกคุณภาพ รองรับงานอุตสาหกรรมหลากหลาย เช่น บรรจุภัณฑ์ ชิ้นส่วน และงานขึ้นรูป',
+      title: 'จำหน่ายเม็ดพลาสติกรีไซเคิลคุณภาพ',
+      subtitle: 'จำหน่ายเม็ดพลาสติกรีไซเคิล สำหรับงานอุตสาหกรรม พร้อมคัดสรรวัตถุดิบให้เหมาะกับการใช้งานแต่ละประเภท',
       button: 'ติดต่อเรา',
       link: '/contact',
     },
     {
       image: '/Hero_2.jpg',
-      title: 'ส่งไว ตรงเวลา',
-      subtitle: 'มีสต็อกพร้อมจัดส่ง รองรับออเดอร์เร่งด่วน ลดเวลาหยุดไลน์ผลิตของคุณ',
-      button: 'ดูบริการ',
+      title: 'ขายส่ง พร้อมสต็อก รองรับทุกออเดอร์',
+      subtitle: 'มีสินค้าพร้อมจัดส่ง รองรับทั้งออเดอร์ขนาดเล็กและขนาดใหญ่ ช่วยให้ธุรกิจของคุณดำเนินต่อได้อย่างราบรื่น',
+      button: 'ดูสินค้า',
       link: '/services',
     },
     {
       image: '/Hero_3.jpg',
-      title: 'เม็ดพลาสติกคุณภาพสูง',
+      title: 'คุ้มค่า พร้อมใส่ใจสิ่งแวดล้อม',
       subtitle:
-        'คัดสรรวัตถุดิบพลาสติกคุณภาพ รองรับงานอุตสาหกรรมหลากหลาย เช่น บรรจุภัณฑ์ ชิ้นส่วน และงานขึ้นรูป',
-      button: 'ดูเพิ่มเติม',
+        'ลดต้นทุนวัตถุดิบ พร้อมช่วยลดปริมาณขยะพลาสติก ด้วยเม็ดพลาสติกรีไซเคิลที่เหมาะสำหรับงานผลิตหลากหลาย',
+      button: 'เกี่ยวกับเรา',
       link: '/about',
-    },
+    }
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
@@ -105,7 +105,7 @@ export default function HeroSlider() {
               backgroundPosition: 'center',
             }}
           >
-             <div className="w-full h-full bg-black/50 flex flex-col items-center justify-center text-white p-4 sm:p-6 md:p-8 rounded-2xl">
+            <div className="w-full h-full bg-black/50 flex flex-col items-center justify-center text-white p-4 sm:p-6 md:p-8 rounded-2xl">
               <motion.div
                 initial={{ opacity: 0, y: 40 }}
                 animate={activeIndex === index ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
