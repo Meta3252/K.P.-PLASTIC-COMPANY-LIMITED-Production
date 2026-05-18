@@ -4,19 +4,21 @@ import ContactForm from "./ContactForm";
 
 const ContactUs: React.FC = () => {
   return (
-    <div className="min-h-screen bg-white text-gray-800 px-4 sm:px-8 md:px-16 py-16">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
-        {/* ฝั่งซ้าย: ข้อมูลติดต่อ */}
-        <div className="md:col-span-5 p-10 animate-fadeIn">
-          <ContactInfo />
-        </div>
+    <main className="relative min-h-screen overflow-hidden bg-[linear-gradient(135deg,#f8fafc_0%,#ecfdf5_42%,#e0f2fe_100%)] px-4 py-16 text-slate-800 sm:px-8 md:px-12 lg:px-16">
+      <div className="absolute left-8 top-20 h-40 w-40 rounded-full bg-emerald-200/40 blur-3xl" />
+      <div className="absolute bottom-20 right-6 h-56 w-56 rounded-full bg-cyan-200/50 blur-3xl" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-white/50" />
 
-        {/* ฝั่งขวา: ฟอร์มติดต่อ */}
-        <div className="md:col-span-7 p-10 animate-fadeIn">
+      <div className="relative mx-auto grid max-w-7xl grid-cols-1 items-start gap-10 lg:grid-cols-12 lg:gap-14">
+        <section className="lg:sticky lg:top-28 lg:col-span-5">
+          <ContactInfo />
+        </section>
+
+        <section className="lg:col-span-7">
           <ContactForm />
-        </div>
+        </section>
       </div>
-    </div>
+    </main>
   );
 };
 
