@@ -12,12 +12,12 @@ export default function CategoryCard({ image, title, description, link }: Catego
   return (
     <div className="flex flex-col h-full border border-slate-200 rounded-xl overflow-hidden shadow-sm bg-white transition-transform hover:-translate-y-1 hover:shadow-md duration-300">
       {/* รูปภาพ */}
-      <div className="relative w-full aspect-video">
+      <div className="relative w-full aspect-video bg-slate-50">
         <Image
           src={image}
           alt={title}
           fill
-          className="object-cover"
+          className="object-contain"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>

@@ -105,6 +105,105 @@ export const services = [
     link: "/services/P-009",
     content: ``
   },
+  {
+    title: "ABS เม็ดขาว K.P.",
+    description:
+      "เม็ดพลาสติก ABS สีขาว เหมาะสำหรับงานขึ้นรูปที่ต้องการความแข็งแรง ทนแรงกระแทก และผิวชิ้นงานที่สวยงาม สามารถใช้กับงานอุตสาหกรรมและชิ้นส่วนทั่วไปได้หลากหลาย",
+    category: categories[0],
+    image: "/images/High-qualityplastic/ABS-white-KP.jpg",
+    link: "/services/ABS-white-KP",
+    content: ``
+  },
+  {
+    title: "ABS ขาว / FS",
+    description:
+      "เม็ดพลาสติก ABS สีขาว เกรด FS เหมาะสำหรับงานผลิตที่ต้องการความคงรูป ความแข็งแรง และคุณภาพผิวชิ้นงานสม่ำเสมอ",
+    category: categories[0],
+    image: "/images/High-qualityplastic/ABS-white-FS.jpg",
+    link: "/services/ABS-white-FS",
+    content: ``
+  },
+  {
+    title: "HIPS ขาว / CT",
+    description:
+      "เม็ดพลาสติก HIPS สีขาว เกรด CT สำหรับงานขึ้นรูปที่ต้องการความเหนียว รับแรงกระแทกได้ดี และให้ผิวชิ้นงานสีขาวสะอาด",
+    category: categories[0],
+    image: "/images/High-qualityplastic/HIPS-white-CT.jpg",
+    link: "/services/HIPS-white-CT",
+    content: ``
+  },
+  {
+    title: "HIPS ดำ",
+    description:
+      "เม็ดพลาสติก HIPS สีดำ เหมาะสำหรับงานผลิตชิ้นส่วนที่ต้องการความเหนียว ผิวสีดำ และการขึ้นรูปที่ควบคุมคุณภาพได้ง่าย",
+    category: categories[0],
+    image: "/images/High-qualityplastic/HIPS-black.jpg",
+    link: "/services/HIPS-black",
+    content: ``
+  },
+  {
+    title: "PP ขาว / AN",
+    description:
+      "เม็ดพลาสติก PP สีขาว เกรด AN สำหรับงานผลิตที่ต้องการน้ำหนักเบา ความเหนียว และความทนทาน เหมาะกับงานขึ้นรูปทั่วไป",
+    category: categories[0],
+    image: "/images/High-qualityplastic/PP-white-AN.jpg",
+    link: "/services/PP-white-AN",
+    content: ``
+  },
+  {
+    title: "HD ขาว",
+    description:
+      "เม็ดพลาสติก HD สีขาว เหมาะสำหรับงานผลิตที่ต้องการความแข็งแรง ทนทาน และสีขาวสำหรับชิ้นงานอุตสาหกรรมหรือบรรจุภัณฑ์",
+    category: categories[0],
+    image: "/images/High-qualityplastic/HD-white.jpg",
+    link: "/services/HD-white",
+    content: ``
+  },
+  {
+    title: "HD ดำ",
+    description:
+      "เม็ดพลาสติก HD สีดำ เหมาะสำหรับงานขึ้นรูปที่ต้องการความแข็งแรง ทนทาน และโทนสีดำสำหรับชิ้นงานใช้งานจริง",
+    category: categories[0],
+    image: "/images/High-qualityplastic/HD-black.jpg",
+    link: "/services/HD-black",
+    content: ``
+  },
+  {
+    title: "PS ใส",
+    description:
+      "เม็ดพลาสติก PS ใส สำหรับงานผลิตที่ต้องการความใส ความเรียบ และรูปลักษณ์สะอาด เหมาะกับชิ้นงานโชว์ผิวหรือบรรจุภัณฑ์",
+    category: categories[0],
+    image: "/images/High-qualityplastic/PS-clear.jpg",
+    link: "/services/PS-clear",
+    content: ``
+  },
+  {
+    title: "LDPE ใส",
+    description:
+      "เม็ดพลาสติก LDPE ใส เหมาะสำหรับงานผลิตที่ต้องการความยืดหยุ่น ความนิ่ม และความใส ใช้งานได้กับงานขึ้นรูปหลากหลายประเภท",
+    category: categories[0],
+    image: "/images/High-qualityplastic/LDPE-clear.jpg",
+    link: "/services/LDPE-clear",
+    content: ``
+  },
+  {
+    title: "LDPE ดำ",
+    description:
+      "เม็ดพลาสติก LDPE สีดำ สำหรับงานผลิตที่ต้องการความยืดหยุ่น สีดำสม่ำเสมอ และใช้งานได้ดีในกระบวนการขึ้นรูปทั่วไป",
+    category: categories[0],
+    image: "/images/High-qualityplastic/LDPE-black.jpg",
+    link: "/services/LDPE-black",
+    content: ``
+  },
+  {
+    title: "LDPE น้ำเงิน",
+    description:
+      "เม็ดพลาสติก LDPE สีน้ำเงิน เหมาะสำหรับงานผลิตที่ต้องการความยืดหยุ่น สีเฉพาะ และการขึ้นรูปที่สม่ำเสมอ",
+    category: categories[0],
+    image: "/images/High-qualityplastic/LDPE-blue.jpg",
+    link: "/services/LDPE-blue",
+    content: ``
+  },
 
 
 

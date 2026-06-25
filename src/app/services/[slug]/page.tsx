@@ -41,7 +41,7 @@ export default async function ServiceDetail({ params }: Props) {
                 alt={service.title}
                 fill
                 priority
-                className="object-cover"
+                className="object-contain"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
