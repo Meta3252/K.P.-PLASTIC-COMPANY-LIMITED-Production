@@ -3,6 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { motion, Variants } from "framer-motion";
+import ExecutiveVideo from "../components/ExecutiveVideo";
 
 // Animation
 const container: Variants = {
@@ -59,6 +60,10 @@ export default function AboutUs() {
             โดยมุ่งเน้นการแปรรูปพลาสติกใช้แล้วให้กลับมาเป็นเม็ดพลาสติกคุณภาพ
             เพื่อรองรับการนำไปใช้ในกระบวนการผลิตได้อย่างเหมาะสม
           </p>
+        </motion.section>
+
+        <motion.section variants={fadeUp}>
+          <ExecutiveVideo variant="about" />
         </motion.section>
 
         {/* Quick Highlights */}

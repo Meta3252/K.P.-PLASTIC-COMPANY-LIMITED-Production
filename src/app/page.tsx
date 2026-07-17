@@ -2,6 +2,7 @@ import HeroSlider from './components/HeroSlider';
 import AboutCompany from './components/AboutCompany';
 import Services from './components/Services';
 import LogoScroller from "./components/LogoScroller";
+import ExecutiveVideo from './components/ExecutiveVideo';
 
 export default function Home() {
   return (
@@ -11,6 +12,9 @@ export default function Home() {
       </section>
       <section id="about">
         <AboutCompany />
+      </section>
+      <section id="executive-video">
+        <ExecutiveVideo variant="home" />
       </section>
       <section id="services">
         <Services />
