@@ -2,6 +2,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import nodemailer from "nodemailer";
 
 type ContactRequestBody = {
+  requestType?: string;
   companyName?: string;
   company?: string;
   contactName?: string;
@@ -13,6 +14,8 @@ type ContactRequestBody = {
   message?: string;
   inquiryType?: string;
 };
+
+const CUSTOM_SPEC_MIN_KG = 2500;
 
 const requiredFields: Array<keyof ContactRequestBody> = [
   "contactName",
@@ -29,6 +32,22 @@ const escapeHtml = (value = "") =>
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#039;");
 
+const getQuantityInKg = (value = "") => {
+  const normalized = value.replace(/,/g, "").toLowerCase();
+  const match = normalized.match(/(\d+(?:\.\d+)?)/);
+
+  if (!match) return null;
+
+  const amount = Number(match[1]);
+  if (!Number.isFinite(amount)) return null;
+
+  if (normalized.includes("ตัน") || normalized.includes("ton")) {
+    return amount * 1000;
+  }
+
+  return amount;
+};
+
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== "POST") {
     return res.status(405).json({ message: "Method not allowed" });
@@ -41,16 +60,26 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     return res.status(400).json({ message: `Missing required field: ${missingField}` });
   }
 
+  if (body.requestType === "customSpec") {
+    const quantityInKg = getQuantityInKg(body.quantity);
+
+    if (quantityInKg === null || quantityInKg < CUSTOM_SPEC_MIN_KG) {
+      return res.status(400).json({ message: "Custom spec orders require a minimum quantity of 2,500 kg" });
+    }
+  }
+
   if (!process.env.SMTP_HOST || !process.env.SMTP_PORT || !process.env.SMTP_USER || !process.env.SMTP_PASS) {
     return res.status(500).json({ message: "Email service is not configured" });
   }
 
   const companyName = body.companyName || body.company || "-";
+  const requestTypeLabel = body.requestType === "customSpec" ? "งานสเปคสั่งทำ" : "เม็ดพลาสติกทั่วไป";
   const recipient = process.env.CONTACT_TO_EMAIL || "k.p.plastic.co.ltd@gmail.com";
   const subjectPrefix =
     body.inquiryType === "plastic-resin-quotation" ? "ขอใบเสนอราคา" : "ติดต่อจากเว็บไซต์";
 
   const rows = [
+    ["ประเภทคำขอ", requestTypeLabel],
     ["บริษัท / ร้านค้า", companyName],
     ["ชื่อผู้ติดต่อ", body.contactName],
     ["เบอร์โทรศัพท์", body.phone],

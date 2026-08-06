@@ -5,9 +5,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
-import { ArrowRight, CheckCircle2, Loader2, PackageSearch, XCircle } from "lucide-react";
+import { AlertTriangle, ArrowRight, CheckCircle2, Loader2, PackageSearch, XCircle } from "lucide-react";
 
 type FormValues = {
+  requestType: string;
   companyName: string;
   contactName: string;
   phone: string;
@@ -18,22 +19,59 @@ type FormValues = {
   message: string;
 };
 
+const CUSTOM_SPEC_MIN_KG = 2500;
+
+const getQuantityInKg = (value?: string) => {
+  if (!value) return null;
+
+  const normalized = value
+    .replace(/,/g, "")
+    .replace(/[０-９]/g, (digit) => String.fromCharCode(digit.charCodeAt(0) - 0xfee0))
+    .toLowerCase();
+  const match = normalized.match(/(\d+(?:\.\d+)?)/);
+
+  if (!match) return null;
+
+  const amount = Number(match[1]);
+  if (!Number.isFinite(amount)) return null;
+
+  if (normalized.includes("ตัน") || normalized.includes("ton")) {
+    return amount * 1000;
+  }
+
+  return amount;
+};
+
 const schema = Yup.object({
+  requestType: Yup.string().required("กรุณาเลือกประเภทคำขอ"),
   companyName: Yup.string().required("กรุณากรอกชื่อบริษัท"),
   contactName: Yup.string().required("กรุณากรอกชื่อผู้ติดต่อ"),
   phone: Yup.string().required("กรุณากรอกเบอร์โทรศัพท์"),
   email: Yup.string().required("กรุณากรอกอีเมล").email("รูปแบบอีเมลไม่ถูกต้อง"),
   productType: Yup.string().required("กรุณาระบุชนิดเม็ดพลาสติกที่สนใจ"),
-  quantity: Yup.string().required("กรุณาระบุปริมาณที่ต้องการ"),
+  quantity: Yup.string()
+    .required("กรุณาระบุปริมาณที่ต้องการ")
+    .test("custom-spec-minimum", "งานสเปคสั่งทำต้องสั่งขั้นต่ำ 2,500 กก.", function (value) {
+      if (this.parent.requestType !== "customSpec") return true;
+
+      const quantityInKg = getQuantityInKg(value);
+      return quantityInKg !== null && quantityInKg >= CUSTOM_SPEC_MIN_KG;
+    }),
   deliveryArea: Yup.string().required("กรุณาระบุพื้นที่จัดส่ง"),
   message: Yup.string().required("กรุณาระบุรายละเอียดเพิ่มเติม"),
 });
+
+const requestTypes = [
+  { value: "general", label: "เม็ดพลาสติกทั่วไป" },
+  { value: "customSpec", label: "งานสเปคสั่งทำ" },
+];
 
 const fields: Array<{
   name: keyof FormValues;
   label: string;
   placeholder: string;
   type?: string;
+  helperText?: string;
 }> = [
   {
     name: "companyName",
@@ -64,7 +102,8 @@ const fields: Array<{
   {
     name: "quantity",
     label: "ปริมาณที่ต้องการ",
-    placeholder: "เช่น 500 กก., 1 ตัน, ใช้ประจำทุกเดือน",
+    placeholder: "เช่น 2,500 กก., 3 ตัน, ใช้ประจำทุกเดือน",
+    helperText: "หากเป็นงานสเปคสั่งทำ กรุณาระบุขั้นต่ำ 2,500 กก.",
   },
   {
     name: "deliveryArea",
@@ -81,6 +120,9 @@ const ContactForm: React.FC = () => {
     reset,
   } = useForm<FormValues>({
     resolver: yupResolver(schema),
+    defaultValues: {
+      requestType: "general",
+    },
   });
 
   const [modal, setModal] = useState<{
@@ -171,9 +213,41 @@ const ContactForm: React.FC = () => {
           <p className="mt-3 text-sm leading-6 text-slate-600">
             กรอกข้อมูลสินค้า ปริมาณ และพื้นที่จัดส่ง เพื่อให้ทีมงานแนะนำเกรดเม็ดพลาสติกและประเมินราคาได้ตรงงานมากขึ้น
           </p>
+          <div className="mt-4 flex items-start gap-2 rounded-2xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm leading-6 text-amber-900">
+            <AlertTriangle className="mt-0.5 h-4 w-4 flex-none" />
+            <span>งานสเปคสั่งทำตามโรงงานกำหนด ต้องสั่งขั้นต่ำ {CUSTOM_SPEC_MIN_KG.toLocaleString()} กก.</span>
+          </div>
         </div>
 
         <form onSubmit={handleSubmit(onSubmit)} className="relative grid gap-4">
+          <motion.div
+            initial={{ opacity: 0, y: 14 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4 }}
+          >
+            <label className="mb-2 block text-sm font-semibold text-slate-700">
+              ประเภทคำขอ <span className="text-emerald-600">*</span>
+            </label>
+            <div className="grid gap-3 sm:grid-cols-2">
+              {requestTypes.map((type) => (
+                <label
+                  key={type.value}
+                  className="flex cursor-pointer items-center gap-3 rounded-xl border border-slate-200 bg-white/80 px-4 py-3 text-sm font-semibold text-slate-700 transition hover:border-emerald-300 hover:bg-emerald-50"
+                >
+                  <input
+                    {...register("requestType")}
+                    type="radio"
+                    value={type.value}
+                    className="h-4 w-4 accent-emerald-600"
+                  />
+                  {type.label}
+                </label>
+              ))}
+            </div>
+            {errors.requestType && <p className="mt-1.5 text-sm text-red-500">{errors.requestType.message}</p>}
+          </motion.div>
+
           <div className="grid gap-4 sm:grid-cols-2">
             {fields.map((field, index) => (
               <motion.div
@@ -197,6 +271,9 @@ const ContactForm: React.FC = () => {
                 />
                 {errors[field.name] && (
                   <p className="mt-1.5 text-sm text-red-500">{errors[field.name]?.message}</p>
+                )}
+                {field.helperText && !errors[field.name] && (
+                  <p className="mt-1.5 text-xs leading-5 text-slate-500">{field.helperText}</p>
                 )}
               </motion.div>
             ))}
