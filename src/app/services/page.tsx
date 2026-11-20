@@ -6,7 +6,8 @@ import { Search } from "lucide-react";
 import CategoryCard from "../components/CategoryCard";
 import { categories, services } from "../components/categoryData";
 import Breadcrumb from "../components/Breadcrumb";
-import CustomCategorySelect from "../components/CustomCategorySelect";
+import TablewarePriceModal from "../components/TablewarePriceModal";
+import { productCategories } from "../components/newProducts";
 
 const container: Variants = {
   hidden: {},
@@ -25,7 +26,7 @@ export default function ServicePage() {
   const filteredServices = services.filter(
     (service) =>
       service.category === selectedCategory &&
-      service.title.toLowerCase().includes(searchTerm.toLowerCase())
+      `${service.title} ${service.description} ${service.category}`.toLowerCase().includes(searchTerm.trim().toLowerCase())
   );
 
   return (
@@ -48,10 +49,10 @@ export default function ServicePage() {
             Product Catalog
           </span>
           <h1 className="max-w-3xl text-4xl font-black leading-tight sm:text-5xl">
-            เม็ดพลาสติกรีไซเคิลและบริการสำหรับงานผลิต
+            เม็ดพลาสติกคุณภาพสำหรับงานผลิต
           </h1>
           <p className="mt-5 max-w-2xl text-base leading-8 text-slate-200">
-            เลือกดูรายการสินค้า ค้นหาเกรดที่ต้องการ หรือส่งรายละเอียดให้ทีมงานช่วยแนะนำวัตถุดิบที่เหมาะกับงานของคุณ
+            ค้นหาเม็ดพลาสติก ABS, HIPS, PP, HD, PS และ LDPE สำหรับงานผลิตของคุณ พร้อมเลือกดูเก้าอี้ จานและชามในหมวดสินค้าเพิ่มเติม
           </p>
         </motion.div>
       </section>
@@ -64,17 +65,27 @@ export default function ServicePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.15, duration: 0.5 }}
           >
-            <div className="grid gap-4 md:grid-cols-[auto_1fr_auto] md:items-center">
-              <CustomCategorySelect
-                categories={categories}
-                selected={selectedCategory}
-                onChange={setSelectedCategory}
-              />
+            <nav aria-label="หมวดหมู่สินค้า" className="mb-5 grid gap-3 sm:grid-cols-3">
+              {categories.map((category, index) => (
+                <button
+                  key={category}
+                  type="button"
+                  aria-pressed={selectedCategory === category}
+                  onClick={() => { setSelectedCategory(category); setSearchTerm(""); }}
+                  className={`rounded-2xl border px-4 py-4 text-left transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-700 ${selectedCategory === category ? "border-emerald-700 bg-emerald-700 text-white" : "border-slate-200 bg-white text-slate-700 hover:border-emerald-400 hover:bg-emerald-50"}`}
+                >
+                  <span className="block text-sm">{index === 0 ? "สินค้าหลัก" : "สินค้าเพิ่มเติม"}</span>
+                  <span className="mt-1 block text-base font-bold">{index === 0 ? "เม็ดพลาสติก" : category}</span>
+                </button>
+              ))}
+            </nav>
+            <div className="grid gap-4 md:grid-cols-[1fr_auto] md:items-center">
               <div className="relative">
                 <Search className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-slate-400" />
                 <input
                   type="text"
-                  placeholder="ค้นหาชื่อสินค้า เช่น ABS, P-001"
+                  aria-label="ค้นหาสินค้า"
+                  placeholder={selectedCategory === categories[0] ? "ค้นหาเม็ดพลาสติก เช่น ABS, PP, P-001" : `ค้นหาในหมวด${selectedCategory}`}
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                   className="w-full rounded-2xl border border-slate-200 bg-white py-3 pl-11 pr-4 text-sm font-medium text-slate-800 outline-none transition focus:border-emerald-400 focus:ring-4 focus:ring-emerald-100"
@@ -86,7 +97,11 @@ export default function ServicePage() {
             </div>
           </motion.div>
 
+          <h2 className="mb-6 text-2xl font-bold text-slate-900">{selectedCategory}</h2>
+          {selectedCategory === productCategories[1] && <TablewarePriceModal />}
+
           <motion.div
+            key={`${selectedCategory}-${searchTerm}`}
             variants={container}
             initial="hidden"
             animate="show"
@@ -99,6 +114,9 @@ export default function ServicePage() {
                   title={item.title}
                   description={item.description}
                   link={item.link}
+                  isNew={item.isNew}
+                  price={item.price}
+                  hasTablewarePrices={item.hasTablewarePrices}
                 />
               </motion.div>
             ))}

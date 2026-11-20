@@ -86,7 +86,7 @@ export default function Services() {
           variants={fadeUp}
           className="text-4xl md:text-5xl font-bold text-white"
         >
-          บริการของเรา
+          เม็ดพลาสติกคุณภาพสำหรับงานผลิต
         </motion.h2>
 
         <motion.div

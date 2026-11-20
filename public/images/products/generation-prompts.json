@@ -1,0 +1,41 @@
+{
+  "tool": "Built-in image_gen",
+  "date": "2026-11-19",
+  "subjects": [
+    {
+      "name": "chair-white",
+      "reference": "c:/Users/Meta3/Downloads/13989_0.jpg",
+      "prompt": "Use case: product-mockup. Asset type: individual ecommerce product catalog photo for K.P. Plastic. Input image: product reference; use only the specified product. Create a clean studio photograph of single white armless stackable molded plastic chair, matching the tall rounded rectangular back with small horizontal carry slot at top and curved leaf-like recessed/slotted ribs from reference. Four slightly splayed legs. Front three-quarter view. Preserve the reference product's actual shape, proportions and color faithfully. Seamless pure white background, soft diffused studio lighting, subtle contact shadow, centered entire product within frame with generous 12% margins, square composition. No other products, no stacks, props, food, logos, text or watermark. Remove the original shop environment."
+    },
+    {
+      "name": "chair-mint",
+      "reference": "c:/Users/Meta3/Downloads/13989_0.jpg",
+      "prompt": "Use case: product-mockup. Asset type: individual ecommerce product catalog photo for K.P. Plastic. Input image: product reference; use only the specified product. Create a clean studio photograph of single mint green armless stackable molded plastic chair, matching the tall rounded rectangular back with small horizontal carry slot at top and curved leaf-like recessed/slotted ribs from reference. Four slightly splayed legs. Front three-quarter view. Preserve the reference product's actual shape, proportions and color faithfully. Seamless pure white background, soft diffused studio lighting, subtle contact shadow, centered entire product within frame with generous 12% margins, square composition. No other products, no stacks, props, food, logos, text or watermark. Remove the original shop environment."
+    },
+    {
+      "name": "oval-plate-blue",
+      "reference": "c:/Users/Meta3/Downloads/1010411_0.jpg",
+      "prompt": "Use case: product-mockup. Asset type: individual ecommerce product catalog photo for K.P. Plastic. Input image: product reference; use only the specified product. Create a clean studio photograph of one sky blue glossy oval serving plate, wide smooth rim, shallow center, matching blue oval plate in lower right of reference. Elevated three-quarter view. Preserve the reference product's actual shape, proportions and color faithfully. Seamless pure white background, soft diffused studio lighting, subtle contact shadow, centered entire product within frame with generous 12% margins, square composition. No other products, no stacks, props, food, logos, text or watermark. Remove the original shop environment."
+    },
+    {
+      "name": "square-plate-white",
+      "reference": "c:/Users/Meta3/Downloads/1010411_0.jpg",
+      "prompt": "Use case: product-mockup. Asset type: individual ecommerce product catalog photo for K.P. Plastic. Input image: product reference; use only the specified product. Create a clean studio photograph of one white glossy rounded-square plate with very rounded corners and broad shallow rim, matching white plate at bottom center-left of reference. Elevated three-quarter view. Preserve the reference product's actual shape, proportions and color faithfully. Seamless pure white background, soft diffused studio lighting, subtle contact shadow, centered entire product within frame with generous 12% margins, square composition. No other products, no stacks, props, food, logos, text or watermark. Remove the original shop environment."
+    },
+    {
+      "name": "round-plate-lime",
+      "reference": "c:/Users/Meta3/Downloads/1010411_0.jpg",
+      "prompt": "Use case: product-mockup. Asset type: individual ecommerce product catalog photo for K.P. Plastic. Input image: product reference; use only the specified product. Create a clean studio photograph of one lime yellow-green glossy round shallow plate with wide curved rim, matching round plates in middle foreground of reference. Elevated three-quarter view. Preserve the reference product's actual shape, proportions and color faithfully. Seamless pure white background, soft diffused studio lighting, subtle contact shadow, centered entire product within frame with generous 12% margins, square composition. No other products, no stacks, props, food, logos, text or watermark. Remove the original shop environment."
+    },
+    {
+      "name": "bowl-pink",
+      "reference": "c:/Users/Meta3/Downloads/1010411_0.jpg",
+      "prompt": "Use case: product-mockup. Asset type: individual ecommerce product catalog photo for K.P. Plastic. Input image: product reference; use only the specified product. Create a clean studio photograph of one pastel pink glossy deep round bowl, matching large pink bowl in back right of reference. Smooth plain sides, flared opening and small flat foot. Elevated three-quarter view. Preserve the reference product's actual shape, proportions and color faithfully. Seamless pure white background, soft diffused studio lighting, subtle contact shadow, centered entire product within frame with generous 12% margins, square composition. No other products, no stacks, props, food, logos, text or watermark. Remove the original shop environment."
+    },
+    {
+      "name": "bowl-lime",
+      "reference": "c:/Users/Meta3/Downloads/1010411_0.jpg",
+      "prompt": "Use case: product-mockup. Asset type: individual ecommerce product catalog photo for K.P. Plastic. Input image: product reference; use only the specified product. Create a clean studio photograph of one lime yellow-green glossy small deep round bowl, matching the small green bowls in center of reference. Smooth plain sides and flared mouth, small flat foot. Elevated three-quarter view. Preserve the reference product's actual shape, proportions and color faithfully. Seamless pure white background, soft diffused studio lighting, subtle contact shadow, centered entire product within frame with generous 12% margins, square composition. No other products, no stacks, props, food, logos, text or watermark. Remove the original shop environment."
+    }
+  ]
+}

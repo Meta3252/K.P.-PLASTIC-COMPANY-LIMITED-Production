@@ -1,10 +1,29 @@
 // app/service/components/categoryData.ts
 
+import { newProducts, productCategories } from "./newProducts";
+
 export const categories = [
   "จำหน่ายเม็ดพลาสติกคุณภาพ",
+  ...productCategories,
 ];
 
-export const services = [
+export interface Service {
+  title: string;
+  description: string;
+  category: string;
+  image: string;
+  link: string;
+  content: string;
+  isNew?: boolean;
+  price?: number;
+  hasTablewarePrices?: boolean;
+  color?: string;
+  details?: string[];
+  originalImage?: string;
+}
+
+export const services: Service[] = [
+  ...newProducts,
   // จัดจำหน่ายเม็ดพลาสติกคุณภาพ
   {
     title: "ABS / A-001",

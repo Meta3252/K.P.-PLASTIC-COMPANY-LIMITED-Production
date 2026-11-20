@@ -2,9 +2,10 @@ export const dynamic = "force-dynamic";
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowLeft, CheckCircle2 } from "lucide-react";
 import { services } from "../../components/categoryData";
 import Breadcrumb from "../../components/Breadcrumb";
+import TablewarePriceModal from "../../components/TablewarePriceModal";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -35,7 +36,7 @@ export default async function ServiceDetail({ params }: Props) {
       <section className="px-4 py-14 sm:px-6 lg:px-8">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
           <div className="relative overflow-hidden rounded-[2rem] bg-white shadow-2xl shadow-emerald-950/10">
-            <div className="relative aspect-[4/3] bg-slate-100">
+            <div className={`relative bg-white ${service.isNew ? 'aspect-square' : 'aspect-[4/3]'}`}>
               <Image
                 src={service.image}
                 alt={service.title}
@@ -45,6 +46,17 @@ export default async function ServiceDetail({ params }: Props) {
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
+            {service.originalImage && (
+              <div className="border-t border-slate-100 p-5">
+                <p className="mb-3 text-sm text-slate-500">ภาพหลักจัดทำด้วย AI จากภาพสินค้าอ้างอิง สีและรายละเอียดอาจแตกต่างเล็กน้อย</p>
+                <details>
+                  <summary className="cursor-pointer text-base font-bold text-emerald-700">ดูภาพถ่ายสินค้าจริง</summary>
+                  <a href={service.originalImage} target="_blank" rel="noreferrer" className="mt-4 block">
+                    <Image src={service.originalImage} alt={`ภาพถ่ายจริงประกอบ ${service.title}`} width={1100} height={1000} className="h-auto w-full rounded-xl" />
+                  </a>
+                </details>
+              </div>
+            )}
           </div>
 
           <div className="rounded-[2rem] border border-slate-100 bg-white p-6 shadow-sm sm:p-8">
@@ -53,13 +65,21 @@ export default async function ServiceDetail({ params }: Props) {
             </span>
             <h1 className="text-4xl font-black leading-tight text-slate-950">{service.title}</h1>
             <p className="mt-5 text-base leading-8 text-slate-600">{service.description}</p>
+            {service.isNew && (
+              <div className="mt-6 rounded-2xl bg-emerald-50 p-5">
+                <p className="text-3xl font-black text-emerald-800">{service.price ? `${service.price.toLocaleString('th-TH')} บาท / ตัว` : service.hasTablewarePrices ? 'ราคาตามรุ่นและขนาด' : 'สอบถามราคา'}</p>
+                <p className="mt-2 text-base text-slate-600">สี{service.color} · สอบถามขนาด จำนวน และค่าจัดส่งกับทีมงาน</p>
+              </div>
+            )}
+
+            {service.hasTablewarePrices && <TablewarePriceModal />}
 
             <div className="mt-8 grid gap-3">
-              {[
+              {(service.details ?? [
                 "เหมาะสำหรับงานผลิตอุตสาหกรรม",
                 "สามารถแจ้งสเปก สี และปริมาณที่ต้องการได้",
                 "ทีมงานช่วยประสานข้อมูลสินค้าและการจัดส่ง",
-              ].map((item) => (
+              ]).map((item) => (
                 <div key={item} className="flex items-start gap-3 rounded-2xl bg-slate-50 p-4 text-sm font-semibold text-slate-700">
                   <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-emerald-600" />
                   {item}
@@ -79,7 +99,6 @@ export default async function ServiceDetail({ params }: Props) {
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-600 px-6 py-3 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-emerald-700"
               >
                 สอบถาม / ขอใบเสนอราคา
-                <ArrowRight className="h-5 w-5" />
               </Link>
               <Link
                 href="/services"

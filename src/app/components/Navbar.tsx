@@ -57,7 +57,7 @@ export default function Navbar() {
   const menuItems = [
     { href: '/', label: 'หน้าแรก' },
     { href: '/about', label: 'เกี่ยวกับเรา' },
-    { href: '/services', label: 'บริการ' },
+    { href: '/services', label: 'สินค้าและบริการ' },
     { href: '/contact', label: 'ติดต่อเรา' },
     { href: '/policy', label: 'นโยบาย' },
   ];
