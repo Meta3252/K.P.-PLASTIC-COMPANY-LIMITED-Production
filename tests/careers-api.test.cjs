@@ -12,13 +12,17 @@ new Function('require', 'exports', compile('src/app/api/careers/route.ts'))(name
 Object.assign(process.env, { SMTP_HOST: 'example.test', SMTP_PORT: '465', SMTP_USER: 'sender@example.test', SMTP_PASS: 'mock', CAREERS_TO_EMAIL: 'company@example.test', CONTACT_TO_EMAIL: 'company@example.test' });
 const makeForm = overrides => {
  const data = new FormData();
- const values = { position: 'qa', fullName: 'Test Applicant', phone: '0812345678', email: 'applicant@example.test', consent: 'yes', ...overrides };
+ const values = { position: 'qa', fullName: 'Test Applicant', phone: '0812345678', email: 'applicant@example.test', consent: 'yes', resume: new File(['%PDF-1.7\nexample'], 'resume.pdf', {type: 'application/pdf'}), ...overrides };
  for (const [key, value] of Object.entries(values)) if (value !== null) data.set(key, value);
  return data;
 };
 const call = (form, headers = {}) => route.POST(new Request('http://localhost/api/careers', { method: 'POST', body: form, headers }));
 (async () => {
  assert.equal((await call(makeForm())).status, 200);
+ assert.equal(sent.length, 1);
+ for (const resume of [null, '', new File([], 'empty.pdf', {type: 'application/pdf'})]) {
+  assert.equal((await call(makeForm({resume}))).status, 400);
+ }
  assert.equal(sent.length, 1);
  assert.equal(sent[0].to, 'company@example.test');
  assert.equal(sent[0].replyTo.address, 'applicant@example.test');
@@ -49,5 +53,5 @@ const call = (form, headers = {}) => route.POST(new Request('http://localhost/ap
  assert.equal((await call(makeForm(), {'x-forwarded-for':'192.0.2.1'})).status, 429);
  delete process.env.SMTP_PASS;
  assert.equal((await call(makeForm())).status, 503);
- console.log('PASS: required fields including email, role allowlist, PDF upload, file size/signature, HTML escaping, origin, throttling, delivery failures and missing SMTP. All mail mocked.');
+ console.log('PASS: required email and nonempty PDF resume, role allowlist, file size/signature, HTML escaping, origin, throttling, delivery failures and missing SMTP. All mail mocked.');
 })().catch(error => { console.error(error); process.exitCode=1; });

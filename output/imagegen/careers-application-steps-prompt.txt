@@ -1,0 +1,31 @@
+Tool: Built-in ImageGen
+
+Use case: infographic-diagram.
+Create a finished Thai-language recruitment application instructions infographic for K.P. Plastic, suitable for posting on a company website and social media. Portrait 4:5 layout, generous margins, crisp high-resolution Thai typography, professionally designed flat editorial graphic with subtle depth. White and very pale mint background, deep navy headings, rich emerald green accents, fine dividers. Four numbered steps in a clear vertical sequence, small elegant outline icons (job selection, contact form, PDF/checklist, send/checkmark). Clear hierarchy and comfortably large readable text. All text must be accurately typeset Thai, with no invented text. Use text wordmark K.P. PLASTIC; no invented logo, no photos, no QR codes, no web URL. This must be an instructional graphic, not a website screenshot. Balance typography and whitespace, make it polished and welcoming.
+
+Exact text and content:
+Top small brand: "K.P. PLASTIC"
+Main title: "สมัครงานกับเรา"
+Subtitle: "4 ขั้นตอนง่าย ๆ ผ่านเว็บไซต์"
+
+Step 1 heading: "เลือกตำแหน่งที่สนใจ"
+Step 1 body: "เข้าหน้า “ร่วมงานกับเรา”"
+Next line: "แล้วกด “สมัครตำแหน่งนี้”"
+
+Step 2 heading: "กรอกข้อมูลผู้สมัคร"
+Step 2 body: "ชื่อ–นามสกุล เบอร์โทรศัพท์ และอีเมล"
+Emphasized small note: "อีเมลจำเป็นต้องกรอก"
+
+Step 3 heading: "แนบเรซูเม่และตรวจสอบข้อมูล"
+Step 3 body: "เรซูเม่ PDF ไม่เกิน 5 MB (ไม่บังคับ)"
+Next line: "อ่านนโยบายความเป็นส่วนตัว"
+Next line: "และยืนยันการใช้ข้อมูลเพื่อสมัครงาน"
+
+Step 4 heading: "ส่งใบสมัครงาน"
+Step 4 body: "กด “ส่งใบสมัครงาน”"
+Next line: "เมื่อส่งสำเร็จ รอทีมงานพิจารณาและติดต่อกลับ"
+
+Bottom information strip: "สอบถามเพิ่มเติม 034-446748"
+Small company name: "บริษัท เค.พี. พลาสติก จำกัด"
+
+Avoid overcrowding. Preserve the information that only the resume is optional, while email is mandatory. Do not imply immediate hiring or promise a response time. Render a single complete ready-to-share image.

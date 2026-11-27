@@ -39,7 +39,11 @@ export default function CareersApplication() {
       selectRef.current?.focus();
       return;
     }
-    if (resume instanceof File && resume.size > 0 && (resume.size > MAX_RESUME_BYTES || !resume.name.toLowerCase().endsWith(".pdf"))) {
+    if (!(resume instanceof File) || resume.size === 0) {
+      setError("กรุณาแนบเรซูเม่เป็นไฟล์ PDF ก่อนส่งใบสมัคร");
+      return;
+    }
+    if (resume.size > MAX_RESUME_BYTES || !resume.name.toLowerCase().endsWith(".pdf")) {
       setError("กรุณาแนบเรซูเม่เป็นไฟล์ PDF ขนาดไม่เกิน 5 MB");
       return;
     }
@@ -99,7 +103,7 @@ export default function CareersApplication() {
             <h3 className="text-xl font-bold">ขั้นตอนการสมัคร</h3>
             <ol className="mt-5 space-y-5 text-base leading-7 text-slate-600">
               <li><strong className="block text-emerald-800">เลือกตำแหน่งที่สนใจ</strong>สมัครได้จาก 3 ตำแหน่งที่กำลังเปิดรับ</li>
-              <li><strong className="block text-emerald-800">กรอกข้อมูลและแนบประวัติ</strong>แนบเรซูเม่ PDF ได้ หากมี</li>
+              <li><strong className="block text-emerald-800">กรอกข้อมูลและแนบประวัติ</strong>ต้องแนบเรซูเม่ PDF ขนาดไม่เกิน 5 MB</li>
               <li><strong className="block text-emerald-800">รอการติดต่อจากทีมงาน</strong>ตรวจสอบเบอร์โทรและอีเมลให้ถูกต้องก่อนส่ง</li>
             </ol>
             </div>
@@ -146,8 +150,8 @@ export default function CareersApplication() {
                   <label className="block text-base font-bold sm:col-span-2" htmlFor="career-experience">ประสบการณ์และทักษะ<textarea id="career-experience" name="experience" rows={4} maxLength={3000} className={inputClass} placeholder="เล่าประสบการณ์ทำงานหรือทักษะที่เกี่ยวข้อง หากยังไม่มีประสบการณ์ สามารถระบุได้ที่นี่" /></label>
                   <label className="block text-base font-bold sm:col-span-2" htmlFor="career-message">ข้อมูลเพิ่มเติม<textarea id="career-message" name="message" rows={3} maxLength={2000} className={inputClass} placeholder="เช่น วันที่สะดวกเริ่มงาน หรือช่วงเวลาที่สะดวกให้ติดต่อกลับ" /></label>
                   <div className="mt-2 border-t border-slate-100 pt-6 sm:col-span-2">
-                    <label htmlFor="career-resume" className="block text-base font-bold">แนบเรซูเม่ (ไม่บังคับ)</label>
-                    <input id="career-resume" name="resume" type="file" accept="application/pdf,.pdf" aria-describedby="resume-help" className="mt-3 block w-full min-w-0 rounded-xl border border-dashed border-emerald-200 bg-emerald-50/40 p-4 text-sm text-slate-700 file:mr-3 file:rounded-lg file:border-0 file:bg-emerald-100 file:px-4 file:py-2 file:text-sm file:font-bold file:text-emerald-800" />
+                    <label htmlFor="career-resume" className="block text-base font-bold">แนบเรซูเม่ *</label>
+                    <input id="career-resume" name="resume" type="file" required accept="application/pdf,.pdf" aria-describedby="resume-help" className="mt-3 block w-full min-w-0 rounded-xl border border-dashed border-emerald-200 bg-emerald-50/40 p-4 text-sm text-slate-700 file:mr-3 file:rounded-lg file:border-0 file:bg-emerald-100 file:px-4 file:py-2 file:text-sm file:font-bold file:text-emerald-800" />
                     <p id="resume-help" className="mt-2 text-sm leading-7 text-slate-600">ไฟล์ PDF ขนาดไม่เกิน 5 MB แนบเฉพาะประวัติการศึกษาและการทำงาน</p>
                   </div>
                   <div className="hidden" aria-hidden="true"><label htmlFor="career-website">Website</label><input id="career-website" name="website" autoComplete="off" tabIndex={-1} /></div>

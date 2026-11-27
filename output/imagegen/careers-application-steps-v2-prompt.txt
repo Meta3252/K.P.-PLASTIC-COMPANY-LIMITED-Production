@@ -1,0 +1,4 @@
+Tool: Built-in ImageGen
+Reference: careers-application-steps.png
+
+Use case: precise-object-edit. Edit this Thai application-steps infographic. Keep all layout, typography, colors, icons and text unchanged except the resume requirement in step 3. Replace the line "เรซูเม่ PDF ไม่เกิน 5 MB (ไม่บังคับ)" with exactly "ต้องแนบเรซูเม่ PDF ไม่เกิน 5 MB". Make "ต้องแนบเรซูเม่" bold dark emerald green to clearly communicate that the resume attachment is mandatory. Remove the words "(ไม่บังคับ)" entirely. Preserve all remaining instructions including mandatory email, phone number 034-446748, company name, four steps, and portrait composition. Do not introduce new text or logos. Maintain crisp, readable Thai typesetting.

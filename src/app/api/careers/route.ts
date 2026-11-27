@@ -65,15 +65,11 @@ export async function POST(request: Request) {
   if (text("consent") !== "yes") return fail("กรุณาอ่านและยืนยันการใช้ข้อมูลเพื่อพิจารณาสมัครงาน");
 
   const resume = form.get("resume");
-  let attachment: Buffer | undefined;
-  if (resume instanceof File && resume.size > 0) {
-    if (resume.size > MAX_RESUME_BYTES) return fail("ไฟล์เรซูเม่ต้องมีขนาดไม่เกิน 5 MB", 413);
-    if (!resume.name.toLowerCase().endsWith(".pdf") || (resume.type && resume.type !== "application/pdf")) return fail("กรุณาแนบเรซูเม่เป็นไฟล์ PDF");
-    attachment = Buffer.from(await resume.arrayBuffer());
-    if (attachment.subarray(0, 5).toString("ascii") !== "%PDF-") return fail("ไฟล์แนบไม่ใช่ PDF ที่ถูกต้อง กรุณาเลือกไฟล์ใหม่");
-  } else if (resume !== null && !(resume instanceof File)) {
-    return fail("รูปแบบไฟล์แนบไม่ถูกต้อง");
-  }
+  if (!(resume instanceof File) || resume.size === 0) return fail("กรุณาแนบเรซูเม่เป็นไฟล์ PDF ก่อนส่งใบสมัคร");
+  if (resume.size > MAX_RESUME_BYTES) return fail("ไฟล์เรซูเม่ต้องมีขนาดไม่เกิน 5 MB", 413);
+  if (!resume.name.toLowerCase().endsWith(".pdf") || (resume.type && resume.type !== "application/pdf")) return fail("กรุณาแนบเรซูเม่เป็นไฟล์ PDF");
+  const attachment = Buffer.from(await resume.arrayBuffer());
+  if (attachment.subarray(0, 5).toString("ascii") !== "%PDF-") return fail("ไฟล์แนบไม่ใช่ PDF ที่ถูกต้อง กรุณาเลือกไฟล์ใหม่");
 
   const port = Number(process.env.SMTP_PORT);
   if (!process.env.SMTP_HOST || !port || !process.env.SMTP_USER || !process.env.SMTP_PASS) return fail("ระบบรับใบสมัครยังไม่พร้อม กรุณาติดต่อ 034-446748 หรือ Inbox ของบริษัท", 503);
@@ -94,7 +90,7 @@ export async function POST(request: Request) {
     ["การศึกษา / สาขา", education || "ไม่ได้ระบุ"],
     ["ประสบการณ์และทักษะ", experience || "ไม่ได้ระบุ"],
     ["ข้อมูลเพิ่มเติม", message || "ไม่ได้ระบุ"],
-    ["เรซูเม่", attachment ? "แนบไฟล์ PDF" : "ไม่ได้แนบ"],
+    ["เรซูเม่", "แนบไฟล์ PDF"],
     ["การยืนยันใช้ข้อมูล", "ผู้สมัครยืนยันให้ใช้ข้อมูลเพื่อพิจารณาสมัครงานและติดต่อกลับ"],
   ];
   const transport = nodemailer.createTransport({
@@ -112,7 +108,7 @@ export async function POST(request: Request) {
       subject: `สมัครงาน: ${position.title} - ${fullName}`,
       text: rows.map(([label, value]) => `${label}: ${value}`).join("\n\n"),
       html: `<div style="font-family:Arial,sans-serif;color:#0f172a;max-width:760px;margin:auto"><h1 style="color:#047857">ใบสมัครงานจากเว็บไซต์</h1><table style="width:100%;border-collapse:collapse">${rows.map(([label, value]) => `<tr><th style="padding:12px;text-align:left;border-bottom:1px solid #e2e8f0;vertical-align:top">${escapeHtml(label)}</th><td style="padding:12px;border-bottom:1px solid #e2e8f0">${escapeHtml(value).replace(/\n/g, "<br>")}</td></tr>`).join("")}</table></div>`,
-      ...(attachment ? { attachments: [{ filename: "resume.pdf", content: attachment, contentType: "application/pdf" }] } : {}),
+      attachments: [{ filename: "resume.pdf", content: attachment, contentType: "application/pdf" }],
       disableFileAccess: true, disableUrlAccess: true,
     });
     if (!result.accepted?.length) throw new Error("delivery rejected");
