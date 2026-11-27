@@ -17,6 +17,7 @@ export default function Footer() {
           <ul>
             <li><a href="/about">About</a></li>
             <li><a href="/services">Services</a></li>
+            <li><a href="/careers">ร่วมงานกับเรา</a></li>
             <li><a href="/contact">Contact</a></li>
             <li><a href="/policy">Privacy Policy</a></li>
           </ul>

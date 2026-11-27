@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { House, ChevronRight } from 'lucide-react';
 
 export default function Breadcrumb() {
     const pathname = usePathname() || ""; // ถ้า null ให้เป็น string ว่าง
@@ -9,7 +10,7 @@ export default function Breadcrumb() {
 
     const crumbs = pathParts.map((part, index) => {
         const href = '/' + pathParts.slice(0, index + 1).join('/');
-        const label = decodeURIComponent(part)
+        const label = part === 'careers' ? 'ร่วมงานกับเรา' : decodeURIComponent(part)
             .replace(/-/g, ' ')
             .replace(/\b\w/g, (c) => c.toUpperCase());
 
@@ -17,44 +18,25 @@ export default function Breadcrumb() {
     });
 
     return (
-        <nav className="bg-gray-100 border-b border-gray-200">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-5 flex items-center space-x-2 text-base">
-                {/* Home */}
-                <Link href="/" className="text-[#007D8A] underline font-medium hover:opacity-80">Home</Link>
-
-                {crumbs.map((crumb, idx) => {
-                    const isLast = idx === crumbs.length - 1;
-                    return (
-                        <div key={crumb.href} className="flex items-center space-x-2">
-                            {/* Separator: right arrow */}
-                            <svg
-                                className="w-4 h-4 text-gray-500"
-                                fill="none"
-                                stroke="currentColor"
-                                strokeWidth={2}
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                viewBox="0 0 24 24"
-                            >
-                                <path d="M9 18l6-6-6-6" />
-                            </svg>
-
-                            {isLast ? (
-                                <span className="text-gray-900 font-semibold" aria-current="page">
-                                    {crumb.label}
-                                </span>
-                            ) : (
-                                <Link
-                                    href={crumb.href}
-                                    className="text-gray-900 font-medium hover:underline"
-                                >
-                                    {crumb.label}
-                                </Link>
-                            )}
-                        </div>
-                    );
-                })}
-            </div>
+        <nav aria-label="เส้นทางหน้าปัจจุบัน" className="border-b border-slate-200/80 bg-white px-4 sm:px-6 lg:px-8">
+            <ol className={`mx-auto flex min-h-14 items-center gap-2 py-3 text-sm sm:gap-3 ${pathname.startsWith('/careers') ? 'max-w-6xl' : 'max-w-7xl'}`}>
+                <li className="shrink-0">
+                    <Link href="/" className="inline-flex items-center gap-2 rounded-md py-1 font-medium text-slate-500 transition hover:text-emerald-700 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700">
+                        <House className="h-4 w-4" strokeWidth={1.75} aria-hidden="true" />
+                        หน้าแรก
+                    </Link>
+                </li>
+                {crumbs.map((crumb, idx) => (
+                    <li key={crumb.href} className="flex min-w-0 items-center gap-2 sm:gap-3">
+                        <ChevronRight className="h-3.5 w-3.5 shrink-0 text-slate-300" aria-hidden="true" />
+                        {idx === crumbs.length - 1 ? (
+                            <span title={crumb.label} className="truncate font-semibold text-emerald-800" aria-current="page">{crumb.label}</span>
+                        ) : (
+                            <Link href={crumb.href} className="truncate rounded-md py-1 font-medium text-slate-500 transition hover:text-emerald-700 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700">{crumb.label}</Link>
+                        )}
+                    </li>
+                ))}
+            </ol>
         </nav>
     );
 }

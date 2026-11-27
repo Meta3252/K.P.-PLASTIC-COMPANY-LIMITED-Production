@@ -58,6 +58,7 @@ export default function Navbar() {
     { href: '/', label: 'หน้าแรก' },
     { href: '/about', label: 'เกี่ยวกับเรา' },
     { href: '/services', label: 'สินค้าและบริการ' },
+    { href: '/careers', label: 'ร่วมงานกับเรา' },
     { href: '/contact', label: 'ติดต่อเรา' },
     { href: '/policy', label: 'นโยบาย' },
   ];
@@ -124,7 +125,7 @@ export default function Navbar() {
 
           <Box sx={{ flexGrow: 1 }} />
 
-          <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 3, alignItems: 'center' }}>
+          <Box sx={{ display: { xs: 'none', lg: 'flex' }, gap: 1, alignItems: 'center' }}>
             {menuItems.map(({ href, label }) => (
               <NavLink key={href} href={href} active={pathname === href}>
                 {label}
@@ -154,7 +155,7 @@ export default function Navbar() {
           </Box>
           <IconButton
             onClick={() => setOpen(!open)} // toggle ได้
-            sx={{ display: { md: 'none' }, ml: 1 }}
+            sx={{ display: { lg: 'none' }, ml: 1 }}
             edge="end"
             aria-label="open menu"
           >
